@@ -2,10 +2,20 @@
    FFA Team Builder — main.js
    ============================================================
    Data flow:
-     pokemonData  -> loaded once from data/pokemon.json, read-only
-     state        -> the single source of truth for everything
-                      the UI renders (players/teams, effects list,
-                      and settings)
+     pokemonData  -> loaded once from data/pokemon.json, read-only.
+                     Each entry is expected to look like:
+                       {
+                         id, name, sprite, baseStatTotal,
+                         types: ["fire", ...],
+                         evolvesFrom: "charmander" | null,
+                         evolvesTo: ["charizard", ...]   // usually 0 or 1, more if branching (e.g. Eevee)
+                       }
+                     If your pokemon.json predates the `types` /
+                     `evolvesFrom` / `evolvesTo` fields, regenerate it
+                     with the updated fetch-pokemon-data.js — Mono Type
+                     Challenge and the Evolve/Devolve buttons need them.
+     state        -> the single source of truth for everything the UI
+                      renders (players/teams, effects list, settings)
      saveState()  -> persists `state` to localStorage
      render()     -> re-draws the whole UI from `state`
    ============================================================ */
@@ -13,6 +23,13 @@
 const STORAGE_KEY = "ffaTeamBuilderState";
 const NUM_PLAYERS = 4;
 const TEAM_SIZE = 6;
+
+const POKEMON_TYPES = [
+  "Normal", "Fire", "Water", "Electric", "Grass", "Ice", "Fighting", "Poison",
+  "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark",
+  "Steel", "Fairy",
+];
+const TERA_TYPES = [...POKEMON_TYPES, "Stellar"];
 
 let pokemonData = []; // loaded from data/pokemon.json
 let state = null;
@@ -24,9 +41,7 @@ async function init() {
 
   populateDatalist();
 
-  state = loadState() ?? createDefaultState();
-  // Migrate older saved states that predate the settings object.
-  if (!state.settings) state.settings = { autoApplyEffects: false };
+  state = migrateState(loadState() ?? createDefaultState());
 
   render();
   bindTabs();
@@ -37,6 +52,7 @@ function createDefaultState() {
   return {
     players: Array.from({ length: NUM_PLAYERS }, (_, i) => ({
       name: `Player ${i + 1}`,
+      monoType: null,
       team: Array.from({ length: TEAM_SIZE }, () => null),
     })),
     effects: [
@@ -46,9 +62,28 @@ function createDefaultState() {
       { name: "Devolve", weight: 2 },
     ],
     settings: {
-      autoApplyEffects: false, // off by default — see roll-effect-btn handler
+      autoApplyEffects: false,
+      bstMax: { enabled: false, value: null },
+      teraTypes: { enabled: false },
+      monoType: { enabled: false },
     },
   };
+}
+
+// Fills in any fields that older saved states (from before a feature
+// existed) won't have, so loading an old localStorage blob doesn't crash.
+function migrateState(s) {
+  if (!s.settings) s.settings = {};
+  if (typeof s.settings.autoApplyEffects !== "boolean") s.settings.autoApplyEffects = false;
+  if (!s.settings.bstMax) s.settings.bstMax = { enabled: false, value: null };
+  if (!s.settings.teraTypes) s.settings.teraTypes = { enabled: false };
+  if (!s.settings.monoType) s.settings.monoType = { enabled: false };
+
+  s.players.forEach((p) => {
+    if (p.monoType === undefined) p.monoType = null;
+  });
+
+  return s;
 }
 
 function loadState() {
@@ -74,22 +109,64 @@ function populateDatalist() {
 
 /* ---------------- Random helpers ---------------- */
 
-function randomPokemon() {
-  return pokemonData[Math.floor(Math.random() * pokemonData.length)];
+// Returns the pool of Pokémon eligible for `player` under the current
+// settings (BST Max ceiling, Mono Type Challenge). Falls back to the
+// full dataset if a filter would otherwise leave nothing to pick from,
+// so generation never silently breaks.
+// Side effect: if Mono Type Challenge is on and this player doesn't have
+// a type locked in yet, one is assigned here.
+function getEligiblePool(player) {
+  if (state.settings.monoType.enabled && player && !player.monoType) {
+    player.monoType = POKEMON_TYPES[Math.floor(Math.random() * POKEMON_TYPES.length)];
+  }
+
+  let pool = pokemonData;
+
+  if (state.settings.bstMax.enabled && typeof state.settings.bstMax.value === "number") {
+    const ceiling = state.settings.bstMax.value;
+    pool = pool.filter((p) => typeof p.baseStatTotal === "number" && p.baseStatTotal <= ceiling);
+  }
+
+  if (state.settings.monoType.enabled && player && player.monoType) {
+    const t = player.monoType.toLowerCase();
+    pool = pool.filter((p) => Array.isArray(p.types) && p.types.some((pt) => pt.toLowerCase() === t));
+  }
+
+  if (pool.length === 0) pool = pokemonData;
+  return pool;
 }
 
-function randomTeam() {
+// Builds the object that actually goes into a team slot: a shallow copy
+// of the raw data entry (so we never mutate the shared pokemonData
+// objects), plus a Tera Type if that setting is on.
+function buildSlotMon(raw) {
+  const mon = { ...raw };
+  if (state.settings.teraTypes.enabled) {
+    mon.teraType = TERA_TYPES[Math.floor(Math.random() * TERA_TYPES.length)];
+  }
+  return mon;
+}
+
+function randomPokemonFor(player) {
+  const pool = getEligiblePool(player);
+  const raw = pool[Math.floor(Math.random() * pool.length)];
+  return buildSlotMon(raw);
+}
+
+function randomTeamFor(player) {
   // Sampling without replacement so one player's team has no duplicates.
-  const pool = [...pokemonData];
+  const pool = [...getEligiblePool(player)];
   const team = [];
   for (let i = 0; i < TEAM_SIZE && pool.length; i++) {
     const idx = Math.floor(Math.random() * pool.length);
-    team.push(pool.splice(idx, 1)[0]);
+    const raw = pool.splice(idx, 1)[0];
+    team.push(buildSlotMon(raw));
   }
   return team;
 }
 
 function findPokemonByName(name) {
+  if (!name) return null;
   const target = name.trim().toLowerCase();
   return pokemonData.find((p) => p.name.toLowerCase() === target) ?? null;
 }
@@ -109,11 +186,13 @@ function rollEffect() {
   return effects[effects.length - 1].name; // floating point fallback
 }
 
-function randomFilledSlot() {
+// Returns a random {pIdx, sIdx} for a filled slot, optionally restricted
+// to slots whose Pokémon passes `filterFn`.
+function randomFilledSlot(filterFn) {
   const candidates = [];
   state.players.forEach((player, pIdx) => {
     player.team.forEach((mon, sIdx) => {
-      if (mon) candidates.push({ pIdx, sIdx });
+      if (mon && (!filterFn || filterFn(mon))) candidates.push({ pIdx, sIdx });
     });
   });
   if (candidates.length === 0) return null;
@@ -131,9 +210,10 @@ function applyEffect(name) {
       const target = randomFilledSlot();
       if (!target) return "no Pokémon on the field yet, nothing to reroll.";
       const { pIdx, sIdx } = target;
-      const newMon = randomPokemon();
-      state.players[pIdx].team[sIdx] = newMon;
-      return `${state.players[pIdx].name}'s slot ${sIdx + 1} became ${capitalize(newMon.name)}.`;
+      const player = state.players[pIdx];
+      const newMon = randomPokemonFor(player);
+      player.team[sIdx] = newMon;
+      return `${player.name}'s slot ${sIdx + 1} became ${capitalize(newMon.name)}.`;
     }
 
     case "Swap": {
@@ -146,14 +226,34 @@ function applyEffect(name) {
       return `swapped ${state.players[a.pIdx].name} slot ${a.sIdx + 1} with ${state.players[b.pIdx].name} slot ${b.sIdx + 1}.`;
     }
 
-    case "Evolve":
-    case "Devolve":
-      // pokemon.json currently only stores name + sprite, so there's no
-      // evolvesFrom/evolvesTo chain to act on yet. Once you add that data
-      // (e.g. from PokeAPI's evolution-chain endpoint), this is the spot
-      // to look up the target's evolvesTo/evolvesFrom and swap the slot,
-      // similar to the Reroll case above.
-      return "no evolution-chain data is loaded yet, so no action was taken.";
+    case "Evolve": {
+      const target = randomFilledSlot((m) => Array.isArray(m.evolvesTo) && m.evolvesTo.length > 0);
+      if (!target) return "no Pokémon on the field can evolve right now.";
+      const { pIdx, sIdx } = target;
+      const player = state.players[pIdx];
+      const mon = player.team[sIdx];
+      const nextName = mon.evolvesTo[Math.floor(Math.random() * mon.evolvesTo.length)];
+      const raw = findPokemonByName(nextName);
+      if (!raw) return `${capitalize(mon.name)} should evolve into ${capitalize(nextName)}, but that's not in the data file.`;
+      const newMon = { ...raw };
+      if (mon.teraType) newMon.teraType = mon.teraType;
+      player.team[sIdx] = newMon;
+      return `${player.name}'s ${capitalize(mon.name)} evolved into ${capitalize(newMon.name)}.`;
+    }
+
+    case "Devolve": {
+      const target = randomFilledSlot((m) => !!m.evolvesFrom);
+      if (!target) return "no Pokémon on the field can devolve right now.";
+      const { pIdx, sIdx } = target;
+      const player = state.players[pIdx];
+      const mon = player.team[sIdx];
+      const raw = findPokemonByName(mon.evolvesFrom);
+      if (!raw) return `${capitalize(mon.name)} should devolve into ${capitalize(mon.evolvesFrom)}, but that's not in the data file.`;
+      const newMon = { ...raw };
+      if (mon.teraType) newMon.teraType = mon.teraType;
+      player.team[sIdx] = newMon;
+      return `${player.name}'s ${capitalize(mon.name)} devolved into ${capitalize(newMon.name)}.`;
+    }
 
     default:
       return "this is a custom effect with no built-in action — apply it manually.";
@@ -226,17 +326,34 @@ function renderPlayers() {
       player.name = nameInput.value.trim() || `Player ${pIdx + 1}`;
       saveState();
     });
+    header.appendChild(nameInput);
+
+    if (state.settings.monoType.enabled) {
+      const typeSelect = document.createElement("select");
+      typeSelect.className = "mono-type-select";
+      typeSelect.title = "Locked type for this player's team";
+      typeSelect.innerHTML =
+        `<option value="">Type…</option>` +
+        POKEMON_TYPES.map(
+          (t) => `<option value="${t}"${player.monoType === t ? " selected" : ""}>${t}</option>`
+        ).join("");
+      typeSelect.addEventListener("change", () => {
+        player.monoType = typeSelect.value || null;
+        saveState();
+      });
+      header.appendChild(typeSelect);
+    }
 
     const genBtn = document.createElement("button");
     genBtn.className = "btn-secondary";
     genBtn.textContent = "Generate";
     genBtn.addEventListener("click", () => {
-      player.team = randomTeam();
+      player.team = randomTeamFor(player);
       saveState();
       render();
     });
+    header.appendChild(genBtn);
 
-    header.append(nameInput, genBtn);
     card.appendChild(header);
 
     // ---- team grid ----
@@ -276,10 +393,11 @@ function renderSlot(player, pIdx, mon, sIdx) {
   input.setAttribute("list", "pokemon-datalist");
   input.placeholder = "Choose Pokémon";
   input.value = mon ? capitalize(mon.name) : "";
+  input.title = mon ? capitalize(mon.name) : "";
   input.addEventListener("change", () => {
     const match = findPokemonByName(input.value);
     if (match) {
-      player.team[sIdx] = match;
+      player.team[sIdx] = buildSlotMon(match);
     } else if (input.value.trim() === "") {
       player.team[sIdx] = null;
     } else {
@@ -293,6 +411,14 @@ function renderSlot(player, pIdx, mon, sIdx) {
   });
   slot.appendChild(input);
 
+  if (mon && mon.teraType) {
+    const badge = document.createElement("div");
+    badge.className = "type-badge";
+    badge.dataset.type = mon.teraType.toLowerCase();
+    badge.textContent = `Tera: ${mon.teraType}`;
+    slot.appendChild(badge);
+  }
+
   const actions = document.createElement("div");
   actions.className = "slot-actions";
 
@@ -301,10 +427,50 @@ function renderSlot(player, pIdx, mon, sIdx) {
   rerollBtn.textContent = "🎲";
   rerollBtn.title = "Reroll just this slot";
   rerollBtn.addEventListener("click", () => {
-    player.team[sIdx] = randomPokemon();
+    player.team[sIdx] = randomPokemonFor(player);
     saveState();
     render();
   });
+  actions.appendChild(rerollBtn);
+
+  const canEvolve = !!(mon && Array.isArray(mon.evolvesTo) && mon.evolvesTo.length > 0);
+  const evolveBtn = document.createElement("button");
+  evolveBtn.className = "btn-evolve";
+  evolveBtn.textContent = "▲";
+  evolveBtn.title = canEvolve
+    ? `Evolve into ${mon.evolvesTo.map(capitalize).join(" / ")}`
+    : "No evolution available";
+  evolveBtn.disabled = !canEvolve;
+  evolveBtn.addEventListener("click", () => {
+    if (!canEvolve) return;
+    const nextName = mon.evolvesTo[Math.floor(Math.random() * mon.evolvesTo.length)];
+    const raw = findPokemonByName(nextName);
+    if (!raw) return;
+    const newMon = { ...raw };
+    if (mon.teraType) newMon.teraType = mon.teraType;
+    player.team[sIdx] = newMon;
+    saveState();
+    render();
+  });
+  actions.appendChild(evolveBtn);
+
+  const canDevolve = !!(mon && mon.evolvesFrom);
+  const devolveBtn = document.createElement("button");
+  devolveBtn.className = "btn-devolve";
+  devolveBtn.textContent = "▼";
+  devolveBtn.title = canDevolve ? `Devolve into ${capitalize(mon.evolvesFrom)}` : "No prior evolution";
+  devolveBtn.disabled = !canDevolve;
+  devolveBtn.addEventListener("click", () => {
+    if (!canDevolve) return;
+    const raw = findPokemonByName(mon.evolvesFrom);
+    if (!raw) return;
+    const newMon = { ...raw };
+    if (mon.teraType) newMon.teraType = mon.teraType;
+    player.team[sIdx] = newMon;
+    saveState();
+    render();
+  });
+  actions.appendChild(devolveBtn);
 
   const clearBtn = document.createElement("button");
   clearBtn.className = "btn-danger";
@@ -315,16 +481,23 @@ function renderSlot(player, pIdx, mon, sIdx) {
     saveState();
     render();
   });
+  actions.appendChild(clearBtn);
 
-  actions.append(rerollBtn, clearBtn);
   slot.appendChild(actions);
 
   return slot;
 }
 
 function renderSettings() {
-  const toggle = document.getElementById("auto-apply-toggle");
-  toggle.checked = state.settings.autoApplyEffects;
+  document.getElementById("auto-apply-toggle").checked = state.settings.autoApplyEffects;
+
+  document.getElementById("bst-max-toggle").checked = state.settings.bstMax.enabled;
+  const bstInput = document.getElementById("bst-max-value");
+  bstInput.value = state.settings.bstMax.value ?? "";
+  bstInput.disabled = !state.settings.bstMax.enabled;
+
+  document.getElementById("tera-types-toggle").checked = state.settings.teraTypes.enabled;
+  document.getElementById("mono-type-toggle").checked = state.settings.monoType.enabled;
 }
 
 /* ---------------- Effect log ---------------- */
@@ -365,13 +538,13 @@ function bindTabs() {
 
 function bindGlobalControls() {
   document.getElementById("generate-all-btn").addEventListener("click", () => {
-    state.players.forEach((p) => (p.team = randomTeam()));
+    state.players.forEach((p) => (p.team = randomTeamFor(p)));
     saveState();
     render();
   });
 
   document.getElementById("reset-btn").addEventListener("click", () => {
-    if (!confirm("Reset all teams and effects to defaults?")) return;
+    if (!confirm("Reset all teams, effects, and settings to defaults?")) return;
     state = createDefaultState();
     saveState();
     render();
@@ -410,9 +583,34 @@ function bindGlobalControls() {
     }
   });
 
+  // ---- Settings tab ----
+
   document.getElementById("auto-apply-toggle").addEventListener("change", (e) => {
     state.settings.autoApplyEffects = e.target.checked;
     saveState();
+  });
+
+  document.getElementById("bst-max-toggle").addEventListener("change", (e) => {
+    state.settings.bstMax.enabled = e.target.checked;
+    saveState();
+    render();
+  });
+
+  document.getElementById("bst-max-value").addEventListener("change", (e) => {
+    const val = Number(e.target.value);
+    state.settings.bstMax.value = e.target.value === "" || Number.isNaN(val) ? null : val;
+    saveState();
+  });
+
+  document.getElementById("tera-types-toggle").addEventListener("change", (e) => {
+    state.settings.teraTypes.enabled = e.target.checked;
+    saveState();
+  });
+
+  document.getElementById("mono-type-toggle").addEventListener("change", (e) => {
+    state.settings.monoType.enabled = e.target.checked;
+    saveState();
+    render();
   });
 }
 

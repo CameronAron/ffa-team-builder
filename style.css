@@ -49,7 +49,7 @@ body {
 }
 
 main {
-  max-width: 1320px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1.75rem 1.5rem 4rem;
   display: flex;
@@ -388,14 +388,16 @@ button:focus-visible {
   background: var(--bg-panel-alt);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 0.85rem;
+  min-width: 0;
 }
 
 .player-card-header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   margin-bottom: 0.85rem;
+  flex-wrap: wrap;
 }
 
 .player-name-input {
@@ -424,15 +426,16 @@ button:focus-visible {
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
+  gap: 0.45rem;
 }
 
 .slot-card {
   background: var(--bg-slot);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-sm);
-  padding: 0.5rem;
+  padding: 0.4rem 0.3rem;
   text-align: center;
+  min-width: 0;
 }
 
 /* Fixed-size "screen" that sprites sit in. Sprites keep their native
@@ -440,9 +443,9 @@ button:focus-visible {
    or forced up to a uniform size, since PokeAPI/Showdown sprites vary
    quite a bit in native dimensions. */
 .sprite-frame {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 0.4rem;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 0.35rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,30 +462,115 @@ button:focus-visible {
 }
 
 .sprite-frame .empty-sprite {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px dashed var(--border);
 }
 
 .slot-card input[type="text"] {
   width: 100%;
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   text-align: center;
   text-transform: capitalize;
-  padding: 0.4rem 0.5rem;
+  padding: 0.35rem 0.3rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .slot-actions {
   margin-top: 0.4rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .slot-actions button {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.78rem;
+  padding: 0.22rem 0.4rem;
+  font-size: 0.72rem;
+  min-width: 26px;
+}
+
+.slot-actions button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.slot-actions button:disabled:hover {
+  background: var(--bg-slot);
+}
+
+.btn-evolve {
+  background: var(--bg-slot);
+  color: #7ce3a8;
+  border: 1px solid rgba(124, 227, 168, 0.35);
+}
+
+.btn-evolve:hover:not(:disabled) {
+  background: rgba(124, 227, 168, 0.14);
+}
+
+.btn-devolve {
+  background: var(--bg-slot);
+  color: #9db2ff;
+  border: 1px solid rgba(157, 178, 255, 0.35);
+}
+
+.btn-devolve:hover:not(:disabled) {
+  background: rgba(157, 178, 255, 0.14);
+}
+
+/* ---------------- Type badges (Tera Type) ---------------- */
+
+.type-badge {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  background: var(--bg-panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.type-badge[data-type="normal"]   { background: #A8A878; color: #2b2b1e; border-color: #A8A878; }
+.type-badge[data-type="fire"]     { background: #F08030; color: #2b1200; border-color: #F08030; }
+.type-badge[data-type="water"]    { background: #6890F0; color: #041033; border-color: #6890F0; }
+.type-badge[data-type="electric"] { background: #F8D030; color: #332900; border-color: #F8D030; }
+.type-badge[data-type="grass"]    { background: #78C850; color: #0c2005; border-color: #78C850; }
+.type-badge[data-type="ice"]      { background: #98D8D8; color: #0a2b2b; border-color: #98D8D8; }
+.type-badge[data-type="fighting"] { background: #C03028; color: #fff;    border-color: #C03028; }
+.type-badge[data-type="poison"]   { background: #A040A0; color: #fff;    border-color: #A040A0; }
+.type-badge[data-type="ground"]   { background: #E0C068; color: #332800; border-color: #E0C068; }
+.type-badge[data-type="flying"]   { background: #A890F0; color: #1a0d33; border-color: #A890F0; }
+.type-badge[data-type="psychic"]  { background: #F85888; color: #330011; border-color: #F85888; }
+.type-badge[data-type="bug"]      { background: #A8B820; color: #1e2400; border-color: #A8B820; }
+.type-badge[data-type="rock"]     { background: #B8A038; color: #2b2000; border-color: #B8A038; }
+.type-badge[data-type="ghost"]    { background: #705898; color: #fff;    border-color: #705898; }
+.type-badge[data-type="dragon"]   { background: #7038F8; color: #fff;    border-color: #7038F8; }
+.type-badge[data-type="dark"]     { background: #705848; color: #fff;    border-color: #705848; }
+.type-badge[data-type="steel"]    { background: #B8B8D0; color: #23272f; border-color: #B8B8D0; }
+.type-badge[data-type="fairy"]    { background: #EE99AC; color: #330018; border-color: #EE99AC; }
+.type-badge[data-type="stellar"]  { background: linear-gradient(135deg, #8A5CF6, #F85888); color: #fff; border-color: #8A5CF6; }
+
+/* ---------------- Mono Type select ---------------- */
+
+.mono-type-select {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: var(--bg-slot);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.5rem;
+  flex-shrink: 0;
+  max-width: 92px;
 }
 
 /* ---------------- Settings tab ---------------- */
@@ -507,6 +595,19 @@ button:focus-visible {
   font-size: 0.88rem;
   line-height: 1.5;
   max-width: 46ch;
+}
+
+.setting-inline-control {
+  margin-top: 0.6rem;
+}
+
+.setting-inline-control input[type="number"] {
+  width: 140px;
+}
+
+.setting-inline-control input[type="number"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .switch {
@@ -556,6 +657,68 @@ button:focus-visible {
 }
 
 /* ---------------- Responsive ---------------- */
+
+@media (max-width: 640px) {
+  main {
+    padding: 1.1rem 0.85rem 3rem;
+    gap: 1rem;
+  }
+
+  .top-bar {
+    padding: 0.85rem 1rem;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+
+  .panel-header h2 {
+    font-size: 1.05rem;
+  }
+
+  .toolbar {
+    width: 100%;
+  }
+
+  .toolbar button {
+    flex: 1;
+  }
+
+  .add-effect-row {
+    flex-wrap: wrap;
+  }
+
+  .add-effect-row input[type="text"] {
+    flex-basis: 100%;
+  }
+
+  .effects-col {
+    overflow-x: auto;
+  }
+
+  #effects-table {
+    min-width: 320px;
+  }
+
+  .player-card-header {
+    gap: 0.35rem;
+  }
+
+  .player-name-input {
+    font-size: 0.92rem;
+  }
+
+  .setting-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 480px) {
   .team-grid {

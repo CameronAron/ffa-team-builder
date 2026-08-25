@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -92,6 +92,51 @@
           <span class="switch-track"><span class="switch-thumb"></span></span>
         </label>
       </div>
+
+      <div class="setting-row">
+        <div class="setting-copy">
+          <div class="setting-title">BST Max</div>
+          <div class="setting-desc">
+            Set a Base Stat Total ceiling. Pokémon above this total won't be generated for anyone.
+          </div>
+          <div class="setting-inline-control">
+            <input type="number" id="bst-max-value" placeholder="e.g. 480" min="0" step="1">
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="bst-max-toggle">
+          <span class="switch-track"><span class="switch-thumb"></span></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-copy">
+          <div class="setting-title">Set Tera Types</div>
+          <div class="setting-desc">
+            Every newly generated Pokémon gets a random Tera Type (any of the 18 types, or Stellar) shown under its name.
+            Pokémon already on a team keep showing their Tera Type once it's assigned, even if you turn this off later.
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="tera-types-toggle">
+          <span class="switch-track"><span class="switch-thumb"></span></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-copy">
+          <div class="setting-title">Mono Type Challenge</div>
+          <div class="setting-desc">
+            Each player gets a locked type shown next to their name (editable via dropdown). Generating for that
+            player only pulls Pokémon that have that type. Leave a player's type blank and it's randomly filled
+            in the moment you next generate for them. Works independently of Set Tera Types — both can be on at once.
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="mono-type-toggle">
+          <span class="switch-track"><span class="switch-thumb"></span></span>
+        </label>
+      </div>
     </section>
   </section>
 
@@ -99,6 +144,6 @@
 
 <datalist id="pokemon-datalist"></datalist>
 
-<script src="main.js?v=3"></script>
+<script src="main.js?v=4"></script>
 </body>
 </html>
