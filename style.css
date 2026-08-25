@@ -1,1 +1,241 @@
+:root {
+  --bg: #f4f6fb;
+  --panel-bg: #ffffff;
+  --border: #dde2ee;
+  --accent: #e3350d;
+  --accent-dark: #b9280a;
+  --text: #23272f;
+  --muted: #6b7280;
+  --slot-bg: #f0f2f8;
+  --radius: 10px;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 0 1.5rem 3rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0 1rem;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.global-controls button {
+  margin-left: 0.5rem;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.55rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+button.secondary:hover {
+  background: #4b5563;
+}
+
+button.danger {
+  background: #9ca3af;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+button.danger:hover {
+  background: #6b7280;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* ---------- Effects panel ---------- */
+
+#effects-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#effects-panel h2 {
+  margin-top: 0;
+}
+
+#effects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+#effects-table th {
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+#effects-table td {
+  padding: 0.4rem 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+#effects-table input[type="number"] {
+  width: 70px;
+}
+
+.add-effect-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-effect-row input[type="text"] {
+  flex: 1;
+}
+
+#roll-effect-btn {
+  font-size: 1.05rem;
+  padding: 0.7rem 1.3rem;
+}
+
+#effect-log {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+#effect-log .log-entry {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+#effect-log .log-entry:first-child {
+  font-weight: 600;
+}
+
+/* ---------- Players grid ---------- */
+
+#players-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.player-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.player-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.player-name-input {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding: 0.2rem;
+  border-radius: 6px;
+}
+
+.player-name-input:focus {
+  background: var(--slot-bg);
+  outline: none;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.slot-card {
+  background: var(--slot-bg);
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.slot-card img {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto 0.3rem;
+}
+
+.slot-card .empty-sprite {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 0.3rem;
+  background: #e2e5ee;
+  border-radius: 6px;
+}
+
+.slot-card input[type="text"] {
+  width: 100%;
+  font-size: 0.85rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.slot-card .slot-actions {
+  margin-top: 0.35rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.slot-card .slot-actions button {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.75rem;
+}
+
+.pokemon-count {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+}

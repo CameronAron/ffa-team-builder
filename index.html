@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Showdown FFA Team Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>FFA Team Builder</h1>
+  <div class="global-controls">
+    <button id="generate-all-btn">🎲 Generate All Teams</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+</header>
+
+<section id="effects-panel">
+  <h2>Effects</h2>
+  <table id="effects-table">
+    <thead>
+      <tr><th>Effect</th><th>Weight</th><th></th></tr>
+    </thead>
+    <tbody id="effects-tbody"></tbody>
+  </table>
+
+  <div class="add-effect-row">
+    <input type="text" id="new-effect-name" placeholder="Effect name">
+    <input type="number" id="new-effect-weight" placeholder="Weight" min="0" step="1" value="1">
+    <button id="add-effect-btn">Add Effect</button>
+  </div>
+
+  <button id="roll-effect-btn">🎲 Roll Effect</button>
+  <div id="effect-log"></div>
+</section>
+
+<main id="players-container"></main>
+
+<datalist id="pokemon-datalist"></datalist>
+
+<script src="main.js"></script>
+</body>
+</html>
