@@ -148,72 +148,8 @@
     ],
     "evolvesFrom": "pichu",
     "evolvesTo": [
-      "raichu"
-    ]
-  },
-  {
-    "id": 10080,
-    "name": "pikachu-rock-star",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10080.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "pichu",
-    "evolvesTo": [
-      "raichu"
-    ]
-  },
-  {
-    "id": 10081,
-    "name": "pikachu-belle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10081.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "pichu",
-    "evolvesTo": [
-      "raichu"
-    ]
-  },
-  {
-    "id": 10082,
-    "name": "pikachu-pop-star",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10082.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "pichu",
-    "evolvesTo": [
-      "raichu"
-    ]
-  },
-  {
-    "id": 10083,
-    "name": "pikachu-phd",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10083.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "pichu",
-    "evolvesTo": [
-      "raichu"
-    ]
-  },
-  {
-    "id": 10084,
-    "name": "pikachu-libre",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10084.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "pichu",
-    "evolvesTo": [
-      "raichu"
+      "raichu",
+      "raichu-alola"
     ]
   },
   {
@@ -515,8 +451,7 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "persian",
-      "perrserker"
+      "persian"
     ]
   },
   {
@@ -529,8 +464,7 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "persian-alola",
-      "perrserker"
+      "persian-alola"
     ]
   },
   {
@@ -543,7 +477,6 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "persian",
       "perrserker"
     ]
   },
@@ -1563,6 +1496,18 @@
     "evolvesTo": []
   },
   {
+    "id": 10169,
+    "name": "articuno-galar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10169.gif",
+    "baseStatTotal": 580,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 145,
     "name": "zapdos",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/145.gif",
@@ -1575,12 +1520,36 @@
     "evolvesTo": []
   },
   {
+    "id": 10170,
+    "name": "zapdos-galar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10170.gif",
+    "baseStatTotal": 580,
+    "types": [
+      "fighting",
+      "flying"
+    ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 146,
     "name": "moltres",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/146.gif",
     "baseStatTotal": 580,
     "types": [
       "fire",
+      "flying"
+    ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10171,
+    "name": "moltres-galar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10171.gif",
+    "baseStatTotal": 580,
+    "types": [
+      "dark",
       "flying"
     ],
     "evolvesFrom": null,
@@ -6385,7 +6354,7 @@
       "psychic"
     ],
     "evolvesFrom": null,
-    "evolvesTo": []
+    "evolvesTo": ["meowstic-male", "meowstic-female"]
   },
   {
     "id": 678,
@@ -7070,18 +7039,7 @@
       "rock"
     ],
     "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10151,
-    "name": "rockruff-own-tempo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10151.gif",
-    "baseStatTotal": 280,
-    "types": [
-      "rock"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
+    "evolvesTo": ["lycanroc-midday", "lycanroc-midnight", "lycanroc-dusk"]
   },
   {
     "id": 745,
@@ -7340,165 +7298,9 @@
     "evolvesTo": []
   },
   {
-    "id": 774,
-    "name": "minior-red-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/774.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10130,
-    "name": "minior-orange-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10130.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10131,
-    "name": "minior-yellow-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10131.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10132,
-    "name": "minior-green-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10132.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10133,
-    "name": "minior-blue-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10133.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10134,
-    "name": "minior-indigo-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10134.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10135,
-    "name": "minior-violet-meteor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10135.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 10136,
     "name": "minior-red",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10136.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10137,
-    "name": "minior-orange",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10137.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10138,
-    "name": "minior-yellow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10138.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10139,
-    "name": "minior-green",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10139.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10140,
-    "name": "minior-blue",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10140.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10141,
-    "name": "minior-indigo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10141.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10142,
-    "name": "minior-violet",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10142.gif",
     "baseStatTotal": 500,
     "types": [
       "rock",
@@ -7981,30 +7783,6 @@
     "evolvesTo": []
   },
   {
-    "id": 10182,
-    "name": "cramorant-gulping",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10182.gif",
-    "baseStatTotal": 475,
-    "types": [
-      "flying",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10183,
-    "name": "cramorant-gorging",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10183.gif",
-    "baseStatTotal": 475,
-    "types": [
-      "flying",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 846,
     "name": "arrokuda",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/846.gif",
@@ -8174,7 +7952,7 @@
     "types": [
       "steel"
     ],
-    "evolvesFrom": "meowth",
+    "evolvesFrom": "meowth-galar",
     "evolvesTo": []
   },
   {
@@ -8272,17 +8050,6 @@
     "evolvesTo": []
   },
   {
-    "id": 10185,
-    "name": "eiscue-noice",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10185.gif",
-    "baseStatTotal": 470,
-    "types": [
-      "ice"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 876,
     "name": "indeedee-male",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/876.gif",
@@ -8310,18 +8077,6 @@
     "id": 877,
     "name": "morpeko-full-belly",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/877.gif",
-    "baseStatTotal": 436,
-    "types": [
-      "electric",
-      "dark"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10187,
-    "name": "morpeko-hangry",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10187.gif",
     "baseStatTotal": 436,
     "types": [
       "electric",
@@ -8466,6 +8221,18 @@
     "evolvesTo": []
   },
   {
+    "id": 10191,
+    "name": "urshifu-single-strike",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10191.gif",
+    "baseStatTotal": 550,
+    "types": [
+      "fighting",
+      "water"
+    ],
+    "evolvesFrom": "kubfu",
+    "evolvesTo": []
+  },
+  {
     "id": 893,
     "name": "zarude",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/893.gif",
@@ -8578,7 +8345,7 @@
       "ground",
       "normal"
     ],
-    "evolvesFrom": "ursaring",
+    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -8889,19 +8656,8 @@
   },
   {
     "id": 925,
-    "name": "maushold-family-of-four",
+    "name": "maushold",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/925.gif",
-    "baseStatTotal": 470,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "tandemaus",
-    "evolvesTo": []
-  },
-  {
-    "id": 10257,
-    "name": "maushold-family-of-three",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10257.png",
     "baseStatTotal": 470,
     "types": [
       "normal"
@@ -9421,19 +9177,8 @@
     "evolvesTo": []
   },
   {
-    "id": 964,
-    "name": "palafin-zero",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/964.gif",
-    "baseStatTotal": 457,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "finizen",
-    "evolvesTo": []
-  },
-  {
     "id": 10256,
-    "name": "palafin-hero",
+    "name": "palafin",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10256.gif",
     "baseStatTotal": 650,
     "types": [
@@ -9602,32 +9347,8 @@
   },
   {
     "id": 978,
-    "name": "tatsugiri-curly",
+    "name": "tatsugiri",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/978.gif",
-    "baseStatTotal": 475,
-    "types": [
-      "dragon",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10258,
-    "name": "tatsugiri-droopy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10258.gif",
-    "baseStatTotal": 475,
-    "types": [
-      "dragon",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10259,
-    "name": "tatsugiri-stretchy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10259.gif",
     "baseStatTotal": 475,
     "types": [
       "dragon",
@@ -9674,19 +9395,8 @@
   },
   {
     "id": 982,
-    "name": "dudunsparce-two-segment",
+    "name": "dudunsparce",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/982.gif",
-    "baseStatTotal": 520,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "dunsparce",
-    "evolvesTo": []
-  },
-  {
-    "id": 10255,
-    "name": "dudunsparce-three-segment",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10255.gif",
     "baseStatTotal": 520,
     "types": [
       "normal"
@@ -10013,105 +9723,9 @@
     "evolvesTo": []
   },
   {
-    "id": 10264,
-    "name": "koraidon-limited-build",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "fighting",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10265,
-    "name": "koraidon-sprinting-build",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "fighting",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10266,
-    "name": "koraidon-swimming-build",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "fighting",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10267,
-    "name": "koraidon-gliding-build",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "fighting",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 1008,
     "name": "miraidon",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
-    "baseStatTotal": 670,
-    "types": [
-      "electric",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10268,
-    "name": "miraidon-low-power-mode",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "electric",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10269,
-    "name": "miraidon-drive-mode",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "electric",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10270,
-    "name": "miraidon-aquatic-mode",
-    "sprite": null,
-    "baseStatTotal": 670,
-    "types": [
-      "electric",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10271,
-    "name": "miraidon-glide-mode",
-    "sprite": null,
     "baseStatTotal": 670,
     "types": [
       "electric",
