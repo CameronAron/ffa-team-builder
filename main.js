@@ -37,7 +37,7 @@ let state = null;
 /* ---------------- Bootstrapping ---------------- */
 
 async function init() {
-  pokemonData = await fetch("data/pokemon.json").then((r) => r.json());
+  pokemonData = await fetch("data/pokemon.json?v=2").then((r) => r.json());
 
   populateDatalist();
 
@@ -62,7 +62,6 @@ function createDefaultState() {
       { name: "Devolve", weight: 2 },
     ],
     settings: {
-      autoApplyEffects: false,
       bstMax: { enabled: false, value: null },
       teraTypes: { enabled: false },
       monoType: { enabled: false },
@@ -74,10 +73,10 @@ function createDefaultState() {
 // existed) won't have, so loading an old localStorage blob doesn't crash.
 function migrateState(s) {
   if (!s.settings) s.settings = {};
-  if (typeof s.settings.autoApplyEffects !== "boolean") s.settings.autoApplyEffects = false;
   if (!s.settings.bstMax) s.settings.bstMax = { enabled: false, value: null };
   if (!s.settings.teraTypes) s.settings.teraTypes = { enabled: false };
   if (!s.settings.monoType) s.settings.monoType = { enabled: false };
+  delete s.settings.autoApplyEffects; // removed setting — auto-apply is permanently off now
 
   s.players.forEach((p) => {
     if (p.monoType === undefined) p.monoType = null;
@@ -184,80 +183,6 @@ function rollEffect() {
     r -= e.weight;
   }
   return effects[effects.length - 1].name; // floating point fallback
-}
-
-// Returns a random {pIdx, sIdx} for a filled slot, optionally restricted
-// to slots whose Pokémon passes `filterFn`.
-function randomFilledSlot(filterFn) {
-  const candidates = [];
-  state.players.forEach((player, pIdx) => {
-    player.team.forEach((mon, sIdx) => {
-      if (mon && (!filterFn || filterFn(mon))) candidates.push({ pIdx, sIdx });
-    });
-  });
-  if (candidates.length === 0) return null;
-  return candidates[Math.floor(Math.random() * candidates.length)];
-}
-
-/* Applies the named effect to current state, mutating it. Only called
-   when the "Auto-apply rolled effects" setting is on. Returns a short
-   human-readable description of what happened, for the log. Unknown /
-   custom effect names fall through to a generic message since there's
-   no predefined action for them. */
-function applyEffect(name) {
-  switch (name) {
-    case "Reroll": {
-      const target = randomFilledSlot();
-      if (!target) return "no Pokémon on the field yet, nothing to reroll.";
-      const { pIdx, sIdx } = target;
-      const player = state.players[pIdx];
-      const newMon = randomPokemonFor(player);
-      player.team[sIdx] = newMon;
-      return `${player.name}'s slot ${sIdx + 1} became ${capitalize(newMon.name)}.`;
-    }
-
-    case "Swap": {
-      const a = randomFilledSlot();
-      const b = randomFilledSlot();
-      if (!a || !b) return "not enough Pokémon on the field yet to swap.";
-      const temp = state.players[a.pIdx].team[a.sIdx];
-      state.players[a.pIdx].team[a.sIdx] = state.players[b.pIdx].team[b.sIdx];
-      state.players[b.pIdx].team[b.sIdx] = temp;
-      return `swapped ${state.players[a.pIdx].name} slot ${a.sIdx + 1} with ${state.players[b.pIdx].name} slot ${b.sIdx + 1}.`;
-    }
-
-    case "Evolve": {
-      const target = randomFilledSlot((m) => Array.isArray(m.evolvesTo) && m.evolvesTo.length > 0);
-      if (!target) return "no Pokémon on the field can evolve right now.";
-      const { pIdx, sIdx } = target;
-      const player = state.players[pIdx];
-      const mon = player.team[sIdx];
-      const nextName = mon.evolvesTo[Math.floor(Math.random() * mon.evolvesTo.length)];
-      const raw = findPokemonByName(nextName);
-      if (!raw) return `${capitalize(mon.name)} should evolve into ${capitalize(nextName)}, but that's not in the data file.`;
-      const newMon = { ...raw };
-      if (mon.teraType) newMon.teraType = mon.teraType;
-      player.team[sIdx] = newMon;
-      return `${player.name}'s ${capitalize(mon.name)} evolved into ${capitalize(newMon.name)}.`;
-    }
-
-    case "Devolve": {
-      const target = randomFilledSlot((m) => !!m.evolvesFrom);
-      if (!target) return "no Pokémon on the field can devolve right now.";
-      const { pIdx, sIdx } = target;
-      const player = state.players[pIdx];
-      const mon = player.team[sIdx];
-      const raw = findPokemonByName(mon.evolvesFrom);
-      if (!raw) return `${capitalize(mon.name)} should devolve into ${capitalize(mon.evolvesFrom)}, but that's not in the data file.`;
-      const newMon = { ...raw };
-      if (mon.teraType) newMon.teraType = mon.teraType;
-      player.team[sIdx] = newMon;
-      return `${player.name}'s ${capitalize(mon.name)} devolved into ${capitalize(newMon.name)}.`;
-    }
-
-    default:
-      return "this is a custom effect with no built-in action — apply it manually.";
-  }
 }
 
 /* ---------------- Rendering ---------------- */
@@ -489,8 +414,6 @@ function renderSlot(player, pIdx, mon, sIdx) {
 }
 
 function renderSettings() {
-  document.getElementById("auto-apply-toggle").checked = state.settings.autoApplyEffects;
-
   document.getElementById("bst-max-toggle").checked = state.settings.bstMax.enabled;
   const bstInput = document.getElementById("bst-max-value");
   bstInput.value = state.settings.bstMax.value ?? "";
@@ -570,25 +493,12 @@ function bindGlobalControls() {
       logEffect("No effects with weight > 0 to roll.");
       return;
     }
-
-    if (state.settings.autoApplyEffects) {
-      const result = applyEffect(name);
-      saveState();
-      render();
-      logEffect(`Rolled ${name} — ${result}`);
-    } else {
-      // Default behavior: just announce it. No action taken, so nothing
-      // in `state` changes and there's no re-render needed.
-      logEffect(`Rolled: ${name}`);
-    }
+    // Rolling only announces the result — it's on you to act on it (e.g.
+    // via the per-slot 🎲/▲/▼ buttons). Nothing in `state` changes here.
+    logEffect(`Rolled: ${name}`);
   });
 
   // ---- Settings tab ----
-
-  document.getElementById("auto-apply-toggle").addEventListener("change", (e) => {
-    state.settings.autoApplyEffects = e.target.checked;
-    saveState();
-  });
 
   document.getElementById("bst-max-toggle").addEventListener("change", (e) => {
     state.settings.bstMax.enabled = e.target.checked;
