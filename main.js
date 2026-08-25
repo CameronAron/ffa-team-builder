@@ -37,7 +37,7 @@ let state = null;
 /* ---------------- Bootstrapping ---------------- */
 
 async function init() {
-  pokemonData = await fetch("data/pokemon.json?v=2").then((r) => r.json());
+  pokemonData = await fetch("data/pokemon.json?v=3").then((r) => r.json());
 
   populateDatalist();
 
@@ -526,8 +526,14 @@ function bindGlobalControls() {
 
 /* ---------------- Utils ---------------- */
 
+// Title-cases each hyphen-separated part, e.g. "vulpix-alola" -> "Vulpix-Alola".
+// Kept hyphenated (not turned into spaces) so the formatted name still
+// round-trips through findPokemonByName() without any extra normalization.
 function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
+  return str
+    .split("-")
+    .map((part) => (part ? part.charAt(0).toUpperCase() + part.slice(1) : part))
+    .join("-");
 }
 
 init();

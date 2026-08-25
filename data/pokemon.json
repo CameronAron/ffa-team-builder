@@ -115,174 +115,6 @@
     "evolvesTo": []
   },
   {
-    "id": 10,
-    "name": "caterpie",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10.gif",
-    "baseStatTotal": 195,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "metapod"
-    ]
-  },
-  {
-    "id": 11,
-    "name": "metapod",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/11.gif",
-    "baseStatTotal": 205,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": "caterpie",
-    "evolvesTo": [
-      "butterfree"
-    ]
-  },
-  {
-    "id": 12,
-    "name": "butterfree",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/12.gif",
-    "baseStatTotal": 395,
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "evolvesFrom": "metapod",
-    "evolvesTo": []
-  },
-  {
-    "id": 13,
-    "name": "weedle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/13.gif",
-    "baseStatTotal": 195,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "kakuna"
-    ]
-  },
-  {
-    "id": 14,
-    "name": "kakuna",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/14.gif",
-    "baseStatTotal": 205,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": "weedle",
-    "evolvesTo": [
-      "beedrill"
-    ]
-  },
-  {
-    "id": 15,
-    "name": "beedrill",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/15.gif",
-    "baseStatTotal": 395,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": "kakuna",
-    "evolvesTo": []
-  },
-  {
-    "id": 16,
-    "name": "pidgey",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/16.gif",
-    "baseStatTotal": 251,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "pidgeotto"
-    ]
-  },
-  {
-    "id": 17,
-    "name": "pidgeotto",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/17.gif",
-    "baseStatTotal": 349,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": "pidgey",
-    "evolvesTo": [
-      "pidgeot"
-    ]
-  },
-  {
-    "id": 18,
-    "name": "pidgeot",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/18.gif",
-    "baseStatTotal": 479,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": "pidgeotto",
-    "evolvesTo": []
-  },
-  {
-    "id": 19,
-    "name": "rattata",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/19.gif",
-    "baseStatTotal": 253,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "raticate"
-    ]
-  },
-  {
-    "id": 20,
-    "name": "raticate",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/20.gif",
-    "baseStatTotal": 413,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "rattata",
-    "evolvesTo": []
-  },
-  {
-    "id": 21,
-    "name": "spearow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/21.gif",
-    "baseStatTotal": 262,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "fearow"
-    ]
-  },
-  {
-    "id": 22,
-    "name": "fearow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/22.gif",
-    "baseStatTotal": 442,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": "spearow",
-    "evolvesTo": []
-  },
-  {
     "id": 23,
     "name": "ekans",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/23.gif",
@@ -352,82 +184,6 @@
       "ground"
     ],
     "evolvesFrom": "sandshrew",
-    "evolvesTo": []
-  },
-  {
-    "id": 29,
-    "name": "nidoran-f",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/29.gif",
-    "baseStatTotal": 275,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "nidorina"
-    ]
-  },
-  {
-    "id": 30,
-    "name": "nidorina",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/30.gif",
-    "baseStatTotal": 365,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": "nidoran-f",
-    "evolvesTo": [
-      "nidoqueen"
-    ]
-  },
-  {
-    "id": 31,
-    "name": "nidoqueen",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/31.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "poison",
-      "ground"
-    ],
-    "evolvesFrom": "nidorina",
-    "evolvesTo": []
-  },
-  {
-    "id": 32,
-    "name": "nidoran-m",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/32.gif",
-    "baseStatTotal": 273,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "nidorino"
-    ]
-  },
-  {
-    "id": 33,
-    "name": "nidorino",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/33.gif",
-    "baseStatTotal": 365,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": "nidoran-m",
-    "evolvesTo": [
-      "nidoking"
-    ]
-  },
-  {
-    "id": 34,
-    "name": "nidoking",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/34.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "poison",
-      "ground"
-    ],
-    "evolvesFrom": "nidorino",
     "evolvesTo": []
   },
   {
@@ -505,34 +261,6 @@
     "evolvesTo": []
   },
   {
-    "id": 41,
-    "name": "zubat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/41.gif",
-    "baseStatTotal": 245,
-    "types": [
-      "poison",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "golbat"
-    ]
-  },
-  {
-    "id": 42,
-    "name": "golbat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/42.gif",
-    "baseStatTotal": 455,
-    "types": [
-      "poison",
-      "flying"
-    ],
-    "evolvesFrom": "zubat",
-    "evolvesTo": [
-      "crobat"
-    ]
-  },
-  {
     "id": 43,
     "name": "oddish",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/43.gif",
@@ -571,32 +299,6 @@
       "poison"
     ],
     "evolvesFrom": "gloom",
-    "evolvesTo": []
-  },
-  {
-    "id": 46,
-    "name": "paras",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/46.gif",
-    "baseStatTotal": 285,
-    "types": [
-      "bug",
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "parasect"
-    ]
-  },
-  {
-    "id": 47,
-    "name": "parasect",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/47.gif",
-    "baseStatTotal": 405,
-    "types": [
-      "bug",
-      "grass"
-    ],
-    "evolvesFrom": "paras",
     "evolvesTo": []
   },
   {
@@ -788,80 +490,6 @@
     "evolvesTo": []
   },
   {
-    "id": 63,
-    "name": "abra",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/63.gif",
-    "baseStatTotal": 310,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "kadabra"
-    ]
-  },
-  {
-    "id": 64,
-    "name": "kadabra",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/64.gif",
-    "baseStatTotal": 400,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": "abra",
-    "evolvesTo": [
-      "alakazam"
-    ]
-  },
-  {
-    "id": 65,
-    "name": "alakazam",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/65.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": "kadabra",
-    "evolvesTo": []
-  },
-  {
-    "id": 66,
-    "name": "machop",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/66.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "machoke"
-    ]
-  },
-  {
-    "id": 67,
-    "name": "machoke",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/67.gif",
-    "baseStatTotal": 405,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": "machop",
-    "evolvesTo": [
-      "machamp"
-    ]
-  },
-  {
-    "id": 68,
-    "name": "machamp",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/68.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": "machoke",
-    "evolvesTo": []
-  },
-  {
     "id": 69,
     "name": "bellsprout",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/69.gif",
@@ -968,30 +596,6 @@
     "evolvesTo": []
   },
   {
-    "id": 77,
-    "name": "ponyta",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/77.gif",
-    "baseStatTotal": 410,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "rapidash"
-    ]
-  },
-  {
-    "id": 78,
-    "name": "rapidash",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/78.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": "ponyta",
-    "evolvesTo": []
-  },
-  {
     "id": 79,
     "name": "slowpoke",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/79.gif",
@@ -1044,20 +648,6 @@
     "evolvesFrom": "magnemite",
     "evolvesTo": [
       "magnezone"
-    ]
-  },
-  {
-    "id": 83,
-    "name": "farfetchd",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/83.gif",
-    "baseStatTotal": 377,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "sirfetchd"
     ]
   },
   {
@@ -1201,20 +791,6 @@
     "evolvesTo": []
   },
   {
-    "id": 95,
-    "name": "onix",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/95.gif",
-    "baseStatTotal": 385,
-    "types": [
-      "rock",
-      "ground"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "steelix"
-    ]
-  },
-  {
     "id": 96,
     "name": "drowzee",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/96.gif",
@@ -1236,30 +812,6 @@
       "psychic"
     ],
     "evolvesFrom": "drowzee",
-    "evolvesTo": []
-  },
-  {
-    "id": 98,
-    "name": "krabby",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/98.gif",
-    "baseStatTotal": 325,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "kingler"
-    ]
-  },
-  {
-    "id": 99,
-    "name": "kingler",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/99.gif",
-    "baseStatTotal": 475,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "krabby",
     "evolvesTo": []
   },
   {
@@ -1313,30 +865,6 @@
     "evolvesTo": []
   },
   {
-    "id": 104,
-    "name": "cubone",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/104.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "ground"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "marowak"
-    ]
-  },
-  {
-    "id": 105,
-    "name": "marowak",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/105.gif",
-    "baseStatTotal": 425,
-    "types": [
-      "ground"
-    ],
-    "evolvesFrom": "cubone",
-    "evolvesTo": []
-  },
-  {
     "id": 106,
     "name": "hitmonlee",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/106.gif",
@@ -1357,19 +885,6 @@
     ],
     "evolvesFrom": "tyrogue",
     "evolvesTo": []
-  },
-  {
-    "id": 108,
-    "name": "lickitung",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/108.gif",
-    "baseStatTotal": 385,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "lickilicky"
-    ]
   },
   {
     "id": 109,
@@ -1437,30 +952,6 @@
     ]
   },
   {
-    "id": 114,
-    "name": "tangela",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/114.gif",
-    "baseStatTotal": 435,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "tangrowth"
-    ]
-  },
-  {
-    "id": 115,
-    "name": "kangaskhan",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/115.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 116,
     "name": "horsea",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/116.gif",
@@ -1487,69 +978,6 @@
     ]
   },
   {
-    "id": 118,
-    "name": "goldeen",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/118.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "seaking"
-    ]
-  },
-  {
-    "id": 119,
-    "name": "seaking",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/119.gif",
-    "baseStatTotal": 450,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "goldeen",
-    "evolvesTo": []
-  },
-  {
-    "id": 120,
-    "name": "staryu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/120.gif",
-    "baseStatTotal": 340,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "starmie"
-    ]
-  },
-  {
-    "id": 121,
-    "name": "starmie",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/121.gif",
-    "baseStatTotal": 520,
-    "types": [
-      "water",
-      "psychic"
-    ],
-    "evolvesFrom": "staryu",
-    "evolvesTo": []
-  },
-  {
-    "id": 122,
-    "name": "mr-mime",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/122.gif",
-    "baseStatTotal": 460,
-    "types": [
-      "psychic",
-      "fairy"
-    ],
-    "evolvesFrom": "mime-jr",
-    "evolvesTo": [
-      "mr-rime"
-    ]
-  },
-  {
     "id": 123,
     "name": "scyther",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/123.gif",
@@ -1563,18 +991,6 @@
       "scizor",
       "kleavor"
     ]
-  },
-  {
-    "id": 124,
-    "name": "jynx",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/124.gif",
-    "baseStatTotal": 455,
-    "types": [
-      "ice",
-      "psychic"
-    ],
-    "evolvesFrom": "smoochum",
-    "evolvesTo": []
   },
   {
     "id": 125,
@@ -1601,17 +1017,6 @@
     "evolvesTo": [
       "magmortar"
     ]
-  },
-  {
-    "id": 127,
-    "name": "pinsir",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/127.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
   },
   {
     "id": 128,
@@ -1737,70 +1142,6 @@
     "evolvesTo": [
       "porygon2"
     ]
-  },
-  {
-    "id": 138,
-    "name": "omanyte",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/138.gif",
-    "baseStatTotal": 355,
-    "types": [
-      "rock",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "omastar"
-    ]
-  },
-  {
-    "id": 139,
-    "name": "omastar",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/139.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "rock",
-      "water"
-    ],
-    "evolvesFrom": "omanyte",
-    "evolvesTo": []
-  },
-  {
-    "id": 140,
-    "name": "kabuto",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/140.gif",
-    "baseStatTotal": 355,
-    "types": [
-      "rock",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "kabutops"
-    ]
-  },
-  {
-    "id": 141,
-    "name": "kabutops",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/141.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "rock",
-      "water"
-    ],
-    "evolvesFrom": "kabuto",
-    "evolvesTo": []
-  },
-  {
-    "id": 142,
-    "name": "aerodactyl",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/142.gif",
-    "baseStatTotal": 515,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
   },
   {
     "id": 143,
@@ -2071,32 +1412,6 @@
     "evolvesTo": []
   },
   {
-    "id": 165,
-    "name": "ledyba",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/165.gif",
-    "baseStatTotal": 265,
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "ledian"
-    ]
-  },
-  {
-    "id": 166,
-    "name": "ledian",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/166.gif",
-    "baseStatTotal": 390,
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "evolvesFrom": "ledyba",
-    "evolvesTo": []
-  },
-  {
     "id": 167,
     "name": "spinarak",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/167.gif",
@@ -2120,18 +1435,6 @@
       "poison"
     ],
     "evolvesFrom": "spinarak",
-    "evolvesTo": []
-  },
-  {
-    "id": 169,
-    "name": "crobat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/169.gif",
-    "baseStatTotal": 535,
-    "types": [
-      "poison",
-      "flying"
-    ],
-    "evolvesFrom": "golbat",
     "evolvesTo": []
   },
   {
@@ -2199,59 +1502,6 @@
     "evolvesTo": [
       "jigglypuff"
     ]
-  },
-  {
-    "id": 175,
-    "name": "togepi",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/175.gif",
-    "baseStatTotal": 245,
-    "types": [
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "togetic"
-    ]
-  },
-  {
-    "id": 176,
-    "name": "togetic",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/176.gif",
-    "baseStatTotal": 405,
-    "types": [
-      "fairy",
-      "flying"
-    ],
-    "evolvesFrom": "togepi",
-    "evolvesTo": [
-      "togekiss"
-    ]
-  },
-  {
-    "id": 177,
-    "name": "natu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/177.gif",
-    "baseStatTotal": 320,
-    "types": [
-      "psychic",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "xatu"
-    ]
-  },
-  {
-    "id": 178,
-    "name": "xatu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/178.gif",
-    "baseStatTotal": 470,
-    "types": [
-      "psychic",
-      "flying"
-    ],
-    "evolvesFrom": "natu",
-    "evolvesTo": []
   },
   {
     "id": 179,
@@ -2529,28 +1779,6 @@
     ]
   },
   {
-    "id": 201,
-    "name": "unown",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201.gif",
-    "baseStatTotal": 336,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 202,
-    "name": "wobbuffet",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/202.gif",
-    "baseStatTotal": 405,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": "wynaut",
-    "evolvesTo": []
-  },
-  {
     "id": 203,
     "name": "girafarig",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/203.gif",
@@ -2598,9 +1826,7 @@
       "normal"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "dudunsparce"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 207,
@@ -2615,18 +1841,6 @@
     "evolvesTo": [
       "gliscor"
     ]
-  },
-  {
-    "id": 208,
-    "name": "steelix",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/208.gif",
-    "baseStatTotal": 510,
-    "types": [
-      "steel",
-      "ground"
-    ],
-    "evolvesFrom": "onix",
-    "evolvesTo": []
   },
   {
     "id": 209,
@@ -2676,18 +1890,6 @@
       "steel"
     ],
     "evolvesFrom": "scyther",
-    "evolvesTo": []
-  },
-  {
-    "id": 213,
-    "name": "shuckle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/213.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "bug",
-      "rock"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -2797,44 +1999,6 @@
     ]
   },
   {
-    "id": 222,
-    "name": "corsola",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/222.gif",
-    "baseStatTotal": 410,
-    "types": [
-      "water",
-      "rock"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "cursola"
-    ]
-  },
-  {
-    "id": 223,
-    "name": "remoraid",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/223.gif",
-    "baseStatTotal": 300,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "octillery"
-    ]
-  },
-  {
-    "id": 224,
-    "name": "octillery",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/224.gif",
-    "baseStatTotal": 480,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "remoraid",
-    "evolvesTo": []
-  },
-  {
     "id": 225,
     "name": "delibird",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/225.gif",
@@ -2844,18 +2008,6 @@
       "flying"
     ],
     "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 226,
-    "name": "mantine",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/226.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "water",
-      "flying"
-    ],
-    "evolvesFrom": "mantyke",
     "evolvesTo": []
   },
   {
@@ -2996,20 +2148,6 @@
     "evolvesTo": []
   },
   {
-    "id": 238,
-    "name": "smoochum",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/238.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "ice",
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "jynx"
-    ]
-  },
-  {
     "id": 239,
     "name": "elekid",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/239.gif",
@@ -3034,17 +2172,6 @@
     "evolvesTo": [
       "magmar"
     ]
-  },
-  {
-    "id": 241,
-    "name": "miltank",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/241.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
   },
   {
     "id": 242,
@@ -3150,18 +2277,6 @@
     "types": [
       "fire",
       "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 251,
-    "name": "celebi",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/251.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "psychic",
-      "grass"
     ],
     "evolvesFrom": null,
     "evolvesTo": []
@@ -3306,96 +2421,6 @@
     "evolvesTo": []
   },
   {
-    "id": 263,
-    "name": "zigzagoon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/263.gif",
-    "baseStatTotal": 240,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "linoone"
-    ]
-  },
-  {
-    "id": 264,
-    "name": "linoone",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/264.gif",
-    "baseStatTotal": 420,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "zigzagoon",
-    "evolvesTo": [
-      "obstagoon"
-    ]
-  },
-  {
-    "id": 265,
-    "name": "wurmple",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/265.gif",
-    "baseStatTotal": 195,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "silcoon",
-      "cascoon"
-    ]
-  },
-  {
-    "id": 266,
-    "name": "silcoon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/266.gif",
-    "baseStatTotal": 205,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": "wurmple",
-    "evolvesTo": [
-      "beautifly"
-    ]
-  },
-  {
-    "id": 267,
-    "name": "beautifly",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/267.gif",
-    "baseStatTotal": 395,
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "evolvesFrom": "silcoon",
-    "evolvesTo": []
-  },
-  {
-    "id": 268,
-    "name": "cascoon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/268.gif",
-    "baseStatTotal": 205,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": "wurmple",
-    "evolvesTo": [
-      "dustox"
-    ]
-  },
-  {
-    "id": 269,
-    "name": "dustox",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/269.gif",
-    "baseStatTotal": 385,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": "cascoon",
-    "evolvesTo": []
-  },
-  {
     "id": 270,
     "name": "lotad",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/270.gif",
@@ -3472,32 +2497,6 @@
       "dark"
     ],
     "evolvesFrom": "nuzleaf",
-    "evolvesTo": []
-  },
-  {
-    "id": 276,
-    "name": "taillow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/276.gif",
-    "baseStatTotal": 270,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "swellow"
-    ]
-  },
-  {
-    "id": 277,
-    "name": "swellow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/277.gif",
-    "baseStatTotal": 455,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": "taillow",
     "evolvesTo": []
   },
   {
@@ -3656,82 +2655,6 @@
     "evolvesTo": []
   },
   {
-    "id": 290,
-    "name": "nincada",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/290.gif",
-    "baseStatTotal": 266,
-    "types": [
-      "bug",
-      "ground"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "ninjask",
-      "shedinja"
-    ]
-  },
-  {
-    "id": 291,
-    "name": "ninjask",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/291.gif",
-    "baseStatTotal": 456,
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "evolvesFrom": "nincada",
-    "evolvesTo": []
-  },
-  {
-    "id": 292,
-    "name": "shedinja",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/292.gif",
-    "baseStatTotal": 236,
-    "types": [
-      "bug",
-      "ghost"
-    ],
-    "evolvesFrom": "nincada",
-    "evolvesTo": []
-  },
-  {
-    "id": 293,
-    "name": "whismur",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/293.gif",
-    "baseStatTotal": 240,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "loudred"
-    ]
-  },
-  {
-    "id": 294,
-    "name": "loudred",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/294.gif",
-    "baseStatTotal": 360,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "whismur",
-    "evolvesTo": [
-      "exploud"
-    ]
-  },
-  {
-    "id": 295,
-    "name": "exploud",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/295.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "loudred",
-    "evolvesTo": []
-  },
-  {
     "id": 296,
     "name": "makuhita",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/296.gif",
@@ -3783,30 +2706,6 @@
     ]
   },
   {
-    "id": 300,
-    "name": "skitty",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/300.gif",
-    "baseStatTotal": 260,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "delcatty"
-    ]
-  },
-  {
-    "id": 301,
-    "name": "delcatty",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/301.gif",
-    "baseStatTotal": 400,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "skitty",
-    "evolvesTo": []
-  },
-  {
     "id": 302,
     "name": "sableye",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/302.gif",
@@ -3816,58 +2715,6 @@
       "ghost"
     ],
     "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 303,
-    "name": "mawile",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/303.gif",
-    "baseStatTotal": 380,
-    "types": [
-      "steel",
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 304,
-    "name": "aron",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/304.gif",
-    "baseStatTotal": 330,
-    "types": [
-      "steel",
-      "rock"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "lairon"
-    ]
-  },
-  {
-    "id": 305,
-    "name": "lairon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/305.gif",
-    "baseStatTotal": 430,
-    "types": [
-      "steel",
-      "rock"
-    ],
-    "evolvesFrom": "aron",
-    "evolvesTo": [
-      "aggron"
-    ]
-  },
-  {
-    "id": 306,
-    "name": "aggron",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/306.gif",
-    "baseStatTotal": 530,
-    "types": [
-      "steel",
-      "rock"
-    ],
-    "evolvesFrom": "lairon",
     "evolvesTo": []
   },
   {
@@ -3894,30 +2741,6 @@
       "psychic"
     ],
     "evolvesFrom": "meditite",
-    "evolvesTo": []
-  },
-  {
-    "id": 309,
-    "name": "electrike",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/309.gif",
-    "baseStatTotal": 295,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "manectric"
-    ]
-  },
-  {
-    "id": 310,
-    "name": "manectric",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/310.gif",
-    "baseStatTotal": 475,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "electrike",
     "evolvesTo": []
   },
   {
@@ -3965,20 +2788,6 @@
     "evolvesTo": []
   },
   {
-    "id": 315,
-    "name": "roselia",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/315.gif",
-    "baseStatTotal": 400,
-    "types": [
-      "grass",
-      "poison"
-    ],
-    "evolvesFrom": "budew",
-    "evolvesTo": [
-      "roserade"
-    ]
-  },
-  {
     "id": 316,
     "name": "gulpin",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/316.gif",
@@ -4000,56 +2809,6 @@
       "poison"
     ],
     "evolvesFrom": "gulpin",
-    "evolvesTo": []
-  },
-  {
-    "id": 318,
-    "name": "carvanha",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/318.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "water",
-      "dark"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "sharpedo"
-    ]
-  },
-  {
-    "id": 319,
-    "name": "sharpedo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/319.gif",
-    "baseStatTotal": 460,
-    "types": [
-      "water",
-      "dark"
-    ],
-    "evolvesFrom": "carvanha",
-    "evolvesTo": []
-  },
-  {
-    "id": 320,
-    "name": "wailmer",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/320.gif",
-    "baseStatTotal": 400,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "wailord"
-    ]
-  },
-  {
-    "id": 321,
-    "name": "wailord",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/321.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "wailmer",
     "evolvesTo": []
   },
   {
@@ -4111,17 +2870,6 @@
       "psychic"
     ],
     "evolvesFrom": "spoink",
-    "evolvesTo": []
-  },
-  {
-    "id": 327,
-    "name": "spinda",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/327.gif",
-    "baseStatTotal": 360,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -4237,30 +2985,6 @@
     "evolvesTo": []
   },
   {
-    "id": 337,
-    "name": "lunatone",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/337.gif",
-    "baseStatTotal": 460,
-    "types": [
-      "rock",
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 338,
-    "name": "solrock",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/338.gif",
-    "baseStatTotal": 460,
-    "types": [
-      "rock",
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 339,
     "name": "barboach",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/339.gif",
@@ -4312,84 +3036,6 @@
     "evolvesTo": []
   },
   {
-    "id": 343,
-    "name": "baltoy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/343.gif",
-    "baseStatTotal": 300,
-    "types": [
-      "ground",
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "claydol"
-    ]
-  },
-  {
-    "id": 344,
-    "name": "claydol",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/344.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "ground",
-      "psychic"
-    ],
-    "evolvesFrom": "baltoy",
-    "evolvesTo": []
-  },
-  {
-    "id": 345,
-    "name": "lileep",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/345.gif",
-    "baseStatTotal": 355,
-    "types": [
-      "rock",
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "cradily"
-    ]
-  },
-  {
-    "id": 346,
-    "name": "cradily",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/346.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "rock",
-      "grass"
-    ],
-    "evolvesFrom": "lileep",
-    "evolvesTo": []
-  },
-  {
-    "id": 347,
-    "name": "anorith",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/347.gif",
-    "baseStatTotal": 355,
-    "types": [
-      "rock",
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "armaldo"
-    ]
-  },
-  {
-    "id": 348,
-    "name": "armaldo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/348.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "rock",
-      "bug"
-    ],
-    "evolvesFrom": "anorith",
-    "evolvesTo": []
-  },
-  {
     "id": 349,
     "name": "feebas",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/349.gif",
@@ -4411,28 +3057,6 @@
       "water"
     ],
     "evolvesFrom": "feebas",
-    "evolvesTo": []
-  },
-  {
-    "id": 351,
-    "name": "castform",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/351.gif",
-    "baseStatTotal": 420,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 352,
-    "name": "kecleon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/352.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -4509,30 +3133,6 @@
     "evolvesTo": []
   },
   {
-    "id": 359,
-    "name": "absol",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/359.gif",
-    "baseStatTotal": 465,
-    "types": [
-      "dark"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 360,
-    "name": "wynaut",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/360.gif",
-    "baseStatTotal": 260,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "wobbuffet"
-    ]
-  },
-  {
     "id": 361,
     "name": "snorunt",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/361.gif",
@@ -4555,94 +3155,6 @@
       "ice"
     ],
     "evolvesFrom": "snorunt",
-    "evolvesTo": []
-  },
-  {
-    "id": 363,
-    "name": "spheal",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/363.gif",
-    "baseStatTotal": 290,
-    "types": [
-      "ice",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "sealeo"
-    ]
-  },
-  {
-    "id": 364,
-    "name": "sealeo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/364.gif",
-    "baseStatTotal": 410,
-    "types": [
-      "ice",
-      "water"
-    ],
-    "evolvesFrom": "spheal",
-    "evolvesTo": [
-      "walrein"
-    ]
-  },
-  {
-    "id": 365,
-    "name": "walrein",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/365.gif",
-    "baseStatTotal": 530,
-    "types": [
-      "ice",
-      "water"
-    ],
-    "evolvesFrom": "sealeo",
-    "evolvesTo": []
-  },
-  {
-    "id": 366,
-    "name": "clamperl",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/366.gif",
-    "baseStatTotal": 345,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "huntail",
-      "gorebyss"
-    ]
-  },
-  {
-    "id": 367,
-    "name": "huntail",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/367.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "clamperl",
-    "evolvesTo": []
-  },
-  {
-    "id": 368,
-    "name": "gorebyss",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/368.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "clamperl",
-    "evolvesTo": []
-  },
-  {
-    "id": 369,
-    "name": "relicanth",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/369.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "water",
-      "rock"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -5004,31 +3516,6 @@
     "evolvesTo": []
   },
   {
-    "id": 399,
-    "name": "bidoof",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/399.gif",
-    "baseStatTotal": 250,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "bibarel"
-    ]
-  },
-  {
-    "id": 400,
-    "name": "bibarel",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/400.gif",
-    "baseStatTotal": 410,
-    "types": [
-      "normal",
-      "water"
-    ],
-    "evolvesFrom": "bidoof",
-    "evolvesTo": []
-  },
-  {
     "id": 401,
     "name": "kricketot",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/401.gif",
@@ -5090,32 +3577,6 @@
     "evolvesTo": []
   },
   {
-    "id": 406,
-    "name": "budew",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/406.gif",
-    "baseStatTotal": 280,
-    "types": [
-      "grass",
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "roselia"
-    ]
-  },
-  {
-    "id": 407,
-    "name": "roserade",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/407.gif",
-    "baseStatTotal": 515,
-    "types": [
-      "grass",
-      "poison"
-    ],
-    "evolvesFrom": "roselia",
-    "evolvesTo": []
-  },
-  {
     "id": 408,
     "name": "cranidos",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/408.gif",
@@ -5163,44 +3624,6 @@
       "steel"
     ],
     "evolvesFrom": "shieldon",
-    "evolvesTo": []
-  },
-  {
-    "id": 412,
-    "name": "burmy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/412.gif",
-    "baseStatTotal": 224,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "wormadam",
-      "mothim"
-    ]
-  },
-  {
-    "id": 413,
-    "name": "wormadam-plant",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/413.gif",
-    "baseStatTotal": 424,
-    "types": [
-      "bug",
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 414,
-    "name": "mothim",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/414.gif",
-    "baseStatTotal": 424,
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "evolvesFrom": "burmy",
     "evolvesTo": []
   },
   {
@@ -5262,30 +3685,6 @@
       "water"
     ],
     "evolvesFrom": "buizel",
-    "evolvesTo": []
-  },
-  {
-    "id": 420,
-    "name": "cherubi",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/420.gif",
-    "baseStatTotal": 275,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "cherrim"
-    ]
-  },
-  {
-    "id": 421,
-    "name": "cherrim",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/421.gif",
-    "baseStatTotal": 450,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": "cherubi",
     "evolvesTo": []
   },
   {
@@ -5351,30 +3750,6 @@
     "evolvesTo": []
   },
   {
-    "id": 427,
-    "name": "buneary",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/427.gif",
-    "baseStatTotal": 350,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "lopunny"
-    ]
-  },
-  {
-    "id": 428,
-    "name": "lopunny",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/428.gif",
-    "baseStatTotal": 480,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "buneary",
-    "evolvesTo": []
-  },
-  {
     "id": 429,
     "name": "mismagius",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/429.gif",
@@ -5395,30 +3770,6 @@
       "flying"
     ],
     "evolvesFrom": "murkrow",
-    "evolvesTo": []
-  },
-  {
-    "id": 431,
-    "name": "glameow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/431.gif",
-    "baseStatTotal": 310,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "purugly"
-    ]
-  },
-  {
-    "id": 432,
-    "name": "purugly",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/432.gif",
-    "baseStatTotal": 452,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "glameow",
     "evolvesTo": []
   },
   {
@@ -5500,20 +3851,6 @@
     ]
   },
   {
-    "id": 439,
-    "name": "mime-jr",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/439.gif",
-    "baseStatTotal": 310,
-    "types": [
-      "psychic",
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "mr-mime"
-    ]
-  },
-  {
     "id": 440,
     "name": "happiny",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/440.gif",
@@ -5525,18 +3862,6 @@
     "evolvesTo": [
       "chansey"
     ]
-  },
-  {
-    "id": 441,
-    "name": "chatot",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/441.gif",
-    "baseStatTotal": 411,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
   },
   {
     "id": 442,
@@ -5653,32 +3978,6 @@
     "evolvesTo": []
   },
   {
-    "id": 451,
-    "name": "skorupi",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/451.gif",
-    "baseStatTotal": 330,
-    "types": [
-      "poison",
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "drapion"
-    ]
-  },
-  {
-    "id": 452,
-    "name": "drapion",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/452.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "poison",
-      "dark"
-    ],
-    "evolvesFrom": "skorupi",
-    "evolvesTo": []
-  },
-  {
     "id": 453,
     "name": "croagunk",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/453.gif",
@@ -5705,17 +4004,6 @@
     "evolvesTo": []
   },
   {
-    "id": 455,
-    "name": "carnivine",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/455.gif",
-    "baseStatTotal": 454,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 456,
     "name": "finneon",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/456.gif",
@@ -5738,20 +4026,6 @@
     ],
     "evolvesFrom": "finneon",
     "evolvesTo": []
-  },
-  {
-    "id": 458,
-    "name": "mantyke",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/458.gif",
-    "baseStatTotal": 345,
-    "types": [
-      "water",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "mantine"
-    ]
   },
   {
     "id": 459,
@@ -5804,17 +4078,6 @@
     "evolvesTo": []
   },
   {
-    "id": 463,
-    "name": "lickilicky",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/463.gif",
-    "baseStatTotal": 515,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "lickitung",
-    "evolvesTo": []
-  },
-  {
     "id": 464,
     "name": "rhyperior",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/464.gif",
@@ -5824,17 +4087,6 @@
       "rock"
     ],
     "evolvesFrom": "rhydon",
-    "evolvesTo": []
-  },
-  {
-    "id": 465,
-    "name": "tangrowth",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/465.gif",
-    "baseStatTotal": 535,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": "tangela",
     "evolvesTo": []
   },
   {
@@ -5857,18 +4109,6 @@
       "fire"
     ],
     "evolvesFrom": "magmar",
-    "evolvesTo": []
-  },
-  {
-    "id": 468,
-    "name": "togekiss",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/468.gif",
-    "baseStatTotal": 545,
-    "types": [
-      "fairy",
-      "flying"
-    ],
-    "evolvesFrom": "togetic",
     "evolvesTo": []
   },
   {
@@ -6160,18 +4400,6 @@
     "evolvesTo": []
   },
   {
-    "id": 494,
-    "name": "victini",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/494.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "psychic",
-      "fire"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 495,
     "name": "snivy",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/495.gif",
@@ -6285,227 +4513,6 @@
     "evolvesTo": []
   },
   {
-    "id": 504,
-    "name": "patrat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/504.gif",
-    "baseStatTotal": 255,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "watchog"
-    ]
-  },
-  {
-    "id": 505,
-    "name": "watchog",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/505.gif",
-    "baseStatTotal": 420,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "patrat",
-    "evolvesTo": []
-  },
-  {
-    "id": 506,
-    "name": "lillipup",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/506.gif",
-    "baseStatTotal": 275,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "herdier"
-    ]
-  },
-  {
-    "id": 507,
-    "name": "herdier",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/507.gif",
-    "baseStatTotal": 370,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "lillipup",
-    "evolvesTo": [
-      "stoutland"
-    ]
-  },
-  {
-    "id": 508,
-    "name": "stoutland",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/508.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "herdier",
-    "evolvesTo": []
-  },
-  {
-    "id": 509,
-    "name": "purrloin",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/509.gif",
-    "baseStatTotal": 281,
-    "types": [
-      "dark"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "liepard"
-    ]
-  },
-  {
-    "id": 510,
-    "name": "liepard",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/510.gif",
-    "baseStatTotal": 446,
-    "types": [
-      "dark"
-    ],
-    "evolvesFrom": "purrloin",
-    "evolvesTo": []
-  },
-  {
-    "id": 511,
-    "name": "pansage",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/511.gif",
-    "baseStatTotal": 316,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "simisage"
-    ]
-  },
-  {
-    "id": 512,
-    "name": "simisage",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/512.gif",
-    "baseStatTotal": 498,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": "pansage",
-    "evolvesTo": []
-  },
-  {
-    "id": 513,
-    "name": "pansear",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/513.gif",
-    "baseStatTotal": 316,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "simisear"
-    ]
-  },
-  {
-    "id": 514,
-    "name": "simisear",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/514.gif",
-    "baseStatTotal": 498,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": "pansear",
-    "evolvesTo": []
-  },
-  {
-    "id": 515,
-    "name": "panpour",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/515.gif",
-    "baseStatTotal": 316,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "simipour"
-    ]
-  },
-  {
-    "id": 516,
-    "name": "simipour",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/516.gif",
-    "baseStatTotal": 498,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": "panpour",
-    "evolvesTo": []
-  },
-  {
-    "id": 517,
-    "name": "munna",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/517.gif",
-    "baseStatTotal": 292,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "musharna"
-    ]
-  },
-  {
-    "id": 518,
-    "name": "musharna",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/518.gif",
-    "baseStatTotal": 487,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": "munna",
-    "evolvesTo": []
-  },
-  {
-    "id": 519,
-    "name": "pidove",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/519.gif",
-    "baseStatTotal": 264,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "tranquill"
-    ]
-  },
-  {
-    "id": 520,
-    "name": "tranquill",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/520.gif",
-    "baseStatTotal": 358,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": "pidove",
-    "evolvesTo": [
-      "unfezant"
-    ]
-  },
-  {
-    "id": 521,
-    "name": "unfezant",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/521.gif",
-    "baseStatTotal": 488,
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "evolvesFrom": "tranquill",
-    "evolvesTo": []
-  },
-  {
     "id": 522,
     "name": "blitzle",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/522.gif",
@@ -6527,69 +4534,6 @@
       "electric"
     ],
     "evolvesFrom": "blitzle",
-    "evolvesTo": []
-  },
-  {
-    "id": 524,
-    "name": "roggenrola",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/524.gif",
-    "baseStatTotal": 280,
-    "types": [
-      "rock"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "boldore"
-    ]
-  },
-  {
-    "id": 525,
-    "name": "boldore",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/525.gif",
-    "baseStatTotal": 390,
-    "types": [
-      "rock"
-    ],
-    "evolvesFrom": "roggenrola",
-    "evolvesTo": [
-      "gigalith"
-    ]
-  },
-  {
-    "id": 526,
-    "name": "gigalith",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/526.gif",
-    "baseStatTotal": 515,
-    "types": [
-      "rock"
-    ],
-    "evolvesFrom": "boldore",
-    "evolvesTo": []
-  },
-  {
-    "id": 527,
-    "name": "woobat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/527.gif",
-    "baseStatTotal": 323,
-    "types": [
-      "psychic",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "swoobat"
-    ]
-  },
-  {
-    "id": 528,
-    "name": "swoobat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/528.gif",
-    "baseStatTotal": 425,
-    "types": [
-      "psychic",
-      "flying"
-    ],
-    "evolvesFrom": "woobat",
     "evolvesTo": []
   },
   {
@@ -6615,17 +4559,6 @@
       "steel"
     ],
     "evolvesFrom": "drilbur",
-    "evolvesTo": []
-  },
-  {
-    "id": 531,
-    "name": "audino",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/531.gif",
-    "baseStatTotal": 445,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -6666,67 +4599,6 @@
     "evolvesTo": []
   },
   {
-    "id": 535,
-    "name": "tympole",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/535.gif",
-    "baseStatTotal": 294,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "palpitoad"
-    ]
-  },
-  {
-    "id": 536,
-    "name": "palpitoad",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/536.gif",
-    "baseStatTotal": 384,
-    "types": [
-      "water",
-      "ground"
-    ],
-    "evolvesFrom": "tympole",
-    "evolvesTo": [
-      "seismitoad"
-    ]
-  },
-  {
-    "id": 537,
-    "name": "seismitoad",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/537.gif",
-    "baseStatTotal": 509,
-    "types": [
-      "water",
-      "ground"
-    ],
-    "evolvesFrom": "palpitoad",
-    "evolvesTo": []
-  },
-  {
-    "id": 538,
-    "name": "throh",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/538.gif",
-    "baseStatTotal": 465,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 539,
-    "name": "sawk",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/539.gif",
-    "baseStatTotal": 465,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 540,
     "name": "sewaddle",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/540.gif",
@@ -6764,46 +4636,6 @@
       "grass"
     ],
     "evolvesFrom": "swadloon",
-    "evolvesTo": []
-  },
-  {
-    "id": 543,
-    "name": "venipede",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/543.gif",
-    "baseStatTotal": 260,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "whirlipede"
-    ]
-  },
-  {
-    "id": 544,
-    "name": "whirlipede",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/544.gif",
-    "baseStatTotal": 360,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": "venipede",
-    "evolvesTo": [
-      "scolipede"
-    ]
-  },
-  {
-    "id": 545,
-    "name": "scolipede",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/545.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "bug",
-      "poison"
-    ],
-    "evolvesFrom": "whirlipede",
     "evolvesTo": []
   },
   {
@@ -6908,67 +4740,6 @@
     "evolvesTo": []
   },
   {
-    "id": 554,
-    "name": "darumaka",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/554.gif",
-    "baseStatTotal": 315,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "darmanitan"
-    ]
-  },
-  {
-    "id": 555,
-    "name": "darmanitan-standard",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/555.gif",
-    "baseStatTotal": 480,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 556,
-    "name": "maractus",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/556.gif",
-    "baseStatTotal": 461,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 557,
-    "name": "dwebble",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/557.gif",
-    "baseStatTotal": 325,
-    "types": [
-      "bug",
-      "rock"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "crustle"
-    ]
-  },
-  {
-    "id": 558,
-    "name": "crustle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/558.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "bug",
-      "rock"
-    ],
-    "evolvesFrom": "dwebble",
-    "evolvesTo": []
-  },
-  {
     "id": 559,
     "name": "scraggy",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/559.gif",
@@ -6992,119 +4763,6 @@
       "fighting"
     ],
     "evolvesFrom": "scraggy",
-    "evolvesTo": []
-  },
-  {
-    "id": 561,
-    "name": "sigilyph",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/561.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "psychic",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 562,
-    "name": "yamask",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/562.gif",
-    "baseStatTotal": 303,
-    "types": [
-      "ghost"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "cofagrigus",
-      "runerigus"
-    ]
-  },
-  {
-    "id": 563,
-    "name": "cofagrigus",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/563.gif",
-    "baseStatTotal": 483,
-    "types": [
-      "ghost"
-    ],
-    "evolvesFrom": "yamask",
-    "evolvesTo": []
-  },
-  {
-    "id": 564,
-    "name": "tirtouga",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/564.gif",
-    "baseStatTotal": 355,
-    "types": [
-      "water",
-      "rock"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "carracosta"
-    ]
-  },
-  {
-    "id": 565,
-    "name": "carracosta",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/565.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "water",
-      "rock"
-    ],
-    "evolvesFrom": "tirtouga",
-    "evolvesTo": []
-  },
-  {
-    "id": 566,
-    "name": "archen",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/566.gif",
-    "baseStatTotal": 401,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "archeops"
-    ]
-  },
-  {
-    "id": 567,
-    "name": "archeops",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/567.gif",
-    "baseStatTotal": 567,
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "evolvesFrom": "archen",
-    "evolvesTo": []
-  },
-  {
-    "id": 568,
-    "name": "trubbish",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/568.gif",
-    "baseStatTotal": 329,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "garbodor"
-    ]
-  },
-  {
-    "id": 569,
-    "name": "garbodor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/569.gif",
-    "baseStatTotal": 474,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": "trubbish",
     "evolvesTo": []
   },
   {
@@ -7256,43 +4914,6 @@
     "evolvesTo": []
   },
   {
-    "id": 582,
-    "name": "vanillite",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/582.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "ice"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "vanillish"
-    ]
-  },
-  {
-    "id": 583,
-    "name": "vanillish",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/583.gif",
-    "baseStatTotal": 395,
-    "types": [
-      "ice"
-    ],
-    "evolvesFrom": "vanillite",
-    "evolvesTo": [
-      "vanilluxe"
-    ]
-  },
-  {
-    "id": 584,
-    "name": "vanilluxe",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/584.gif",
-    "baseStatTotal": 535,
-    "types": [
-      "ice"
-    ],
-    "evolvesFrom": "vanillish",
-    "evolvesTo": []
-  },
-  {
     "id": 585,
     "name": "deerling",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/585.gif",
@@ -7319,43 +4940,6 @@
     "evolvesTo": []
   },
   {
-    "id": 587,
-    "name": "emolga",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/587.gif",
-    "baseStatTotal": 428,
-    "types": [
-      "electric",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 588,
-    "name": "karrablast",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/588.gif",
-    "baseStatTotal": 315,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "escavalier"
-    ]
-  },
-  {
-    "id": 589,
-    "name": "escavalier",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/589.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "bug",
-      "steel"
-    ],
-    "evolvesFrom": "karrablast",
-    "evolvesTo": []
-  },
-  {
     "id": 590,
     "name": "foongus",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/590.gif",
@@ -7379,30 +4963,6 @@
       "poison"
     ],
     "evolvesFrom": "foongus",
-    "evolvesTo": []
-  },
-  {
-    "id": 592,
-    "name": "frillish-male",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/592.gif",
-    "baseStatTotal": 335,
-    "types": [
-      "water",
-      "ghost"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 593,
-    "name": "jellicent-male",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/593.gif",
-    "baseStatTotal": 480,
-    "types": [
-      "water",
-      "ghost"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -7443,69 +5003,6 @@
     "evolvesTo": []
   },
   {
-    "id": 597,
-    "name": "ferroseed",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/597.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "grass",
-      "steel"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "ferrothorn"
-    ]
-  },
-  {
-    "id": 598,
-    "name": "ferrothorn",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/598.gif",
-    "baseStatTotal": 489,
-    "types": [
-      "grass",
-      "steel"
-    ],
-    "evolvesFrom": "ferroseed",
-    "evolvesTo": []
-  },
-  {
-    "id": 599,
-    "name": "klink",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/599.gif",
-    "baseStatTotal": 300,
-    "types": [
-      "steel"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "klang"
-    ]
-  },
-  {
-    "id": 600,
-    "name": "klang",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/600.gif",
-    "baseStatTotal": 440,
-    "types": [
-      "steel"
-    ],
-    "evolvesFrom": "klink",
-    "evolvesTo": [
-      "klinklang"
-    ]
-  },
-  {
-    "id": 601,
-    "name": "klinklang",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/601.gif",
-    "baseStatTotal": 520,
-    "types": [
-      "steel"
-    ],
-    "evolvesFrom": "klang",
-    "evolvesTo": []
-  },
-  {
     "id": 602,
     "name": "tynamo",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/602.gif",
@@ -7540,30 +5037,6 @@
       "electric"
     ],
     "evolvesFrom": "eelektrik",
-    "evolvesTo": []
-  },
-  {
-    "id": 605,
-    "name": "elgyem",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/605.gif",
-    "baseStatTotal": 335,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "beheeyem"
-    ]
-  },
-  {
-    "id": 606,
-    "name": "beheeyem",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/606.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "psychic"
-    ],
-    "evolvesFrom": "elgyem",
     "evolvesTo": []
   },
   {
@@ -7679,42 +5152,6 @@
     "evolvesTo": []
   },
   {
-    "id": 616,
-    "name": "shelmet",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/616.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "accelgor"
-    ]
-  },
-  {
-    "id": 617,
-    "name": "accelgor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/617.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": "shelmet",
-    "evolvesTo": []
-  },
-  {
-    "id": 618,
-    "name": "stunfisk",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/618.gif",
-    "baseStatTotal": 471,
-    "types": [
-      "ground",
-      "electric"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 619,
     "name": "mienfoo",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/619.gif",
@@ -7736,17 +5173,6 @@
       "fighting"
     ],
     "evolvesFrom": "mienfoo",
-    "evolvesTo": []
-  },
-  {
-    "id": 621,
-    "name": "druddigon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/621.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "dragon"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -7804,17 +5230,6 @@
     ]
   },
   {
-    "id": 626,
-    "name": "bouffalant",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/626.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 627,
     "name": "rufflet",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/627.gif",
@@ -7864,29 +5279,6 @@
       "flying"
     ],
     "evolvesFrom": "vullaby",
-    "evolvesTo": []
-  },
-  {
-    "id": 631,
-    "name": "heatmor",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/631.gif",
-    "baseStatTotal": 484,
-    "types": [
-      "fire"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 632,
-    "name": "durant",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/632.gif",
-    "baseStatTotal": 484,
-    "types": [
-      "bug",
-      "steel"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -8087,18 +5479,6 @@
     "evolvesTo": []
   },
   {
-    "id": 649,
-    "name": "genesect",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/649.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "bug",
-      "steel"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 650,
     "name": "chespin",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/650.gif",
@@ -8213,31 +5593,6 @@
     "evolvesTo": []
   },
   {
-    "id": 659,
-    "name": "bunnelby",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/659.gif",
-    "baseStatTotal": 237,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "diggersby"
-    ]
-  },
-  {
-    "id": 660,
-    "name": "diggersby",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/660.gif",
-    "baseStatTotal": 423,
-    "types": [
-      "normal",
-      "ground"
-    ],
-    "evolvesFrom": "bunnelby",
-    "evolvesTo": []
-  },
-  {
     "id": 661,
     "name": "fletchling",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/661.gif",
@@ -8325,9 +5680,7 @@
       "normal"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "pyroar"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 668,
@@ -8338,7 +5691,7 @@
       "fire",
       "normal"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "litleo",
     "evolvesTo": []
   },
   {
@@ -8403,42 +5756,6 @@
     "evolvesTo": []
   },
   {
-    "id": 674,
-    "name": "pancham",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/674.gif",
-    "baseStatTotal": 348,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "pangoro"
-    ]
-  },
-  {
-    "id": 675,
-    "name": "pangoro",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/675.gif",
-    "baseStatTotal": 495,
-    "types": [
-      "fighting",
-      "dark"
-    ],
-    "evolvesFrom": "pancham",
-    "evolvesTo": []
-  },
-  {
-    "id": 676,
-    "name": "furfrou",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/676.gif",
-    "baseStatTotal": 472,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 677,
     "name": "espurr",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/677.gif",
@@ -8447,9 +5764,7 @@
       "psychic"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "meowstic"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 678,
@@ -8459,95 +5774,7 @@
     "types": [
       "psychic"
     ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 679,
-    "name": "honedge",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/679.gif",
-    "baseStatTotal": 325,
-    "types": [
-      "steel",
-      "ghost"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "doublade"
-    ]
-  },
-  {
-    "id": 680,
-    "name": "doublade",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/680.gif",
-    "baseStatTotal": 448,
-    "types": [
-      "steel",
-      "ghost"
-    ],
-    "evolvesFrom": "honedge",
-    "evolvesTo": [
-      "aegislash"
-    ]
-  },
-  {
-    "id": 681,
-    "name": "aegislash-shield",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/681.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "steel",
-      "ghost"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 682,
-    "name": "spritzee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/682.gif",
-    "baseStatTotal": 341,
-    "types": [
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "aromatisse"
-    ]
-  },
-  {
-    "id": 683,
-    "name": "aromatisse",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/683.gif",
-    "baseStatTotal": 462,
-    "types": [
-      "fairy"
-    ],
-    "evolvesFrom": "spritzee",
-    "evolvesTo": []
-  },
-  {
-    "id": 684,
-    "name": "swirlix",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/684.gif",
-    "baseStatTotal": 341,
-    "types": [
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "slurpuff"
-    ]
-  },
-  {
-    "id": 685,
-    "name": "slurpuff",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/685.gif",
-    "baseStatTotal": 480,
-    "types": [
-      "fairy"
-    ],
-    "evolvesFrom": "swirlix",
+    "evolvesFrom": "espurr",
     "evolvesTo": []
   },
   {
@@ -8574,32 +5801,6 @@
       "psychic"
     ],
     "evolvesFrom": "inkay",
-    "evolvesTo": []
-  },
-  {
-    "id": 688,
-    "name": "binacle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/688.gif",
-    "baseStatTotal": 306,
-    "types": [
-      "rock",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "barbaracle"
-    ]
-  },
-  {
-    "id": 689,
-    "name": "barbaracle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/689.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "rock",
-      "water"
-    ],
-    "evolvesFrom": "binacle",
     "evolvesTo": []
   },
   {
@@ -8650,84 +5851,6 @@
       "water"
     ],
     "evolvesFrom": "clauncher",
-    "evolvesTo": []
-  },
-  {
-    "id": 694,
-    "name": "helioptile",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/694.gif",
-    "baseStatTotal": 289,
-    "types": [
-      "electric",
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "heliolisk"
-    ]
-  },
-  {
-    "id": 695,
-    "name": "heliolisk",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/695.gif",
-    "baseStatTotal": 481,
-    "types": [
-      "electric",
-      "normal"
-    ],
-    "evolvesFrom": "helioptile",
-    "evolvesTo": []
-  },
-  {
-    "id": 696,
-    "name": "tyrunt",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/696.gif",
-    "baseStatTotal": 362,
-    "types": [
-      "rock",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "tyrantrum"
-    ]
-  },
-  {
-    "id": 697,
-    "name": "tyrantrum",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/697.gif",
-    "baseStatTotal": 521,
-    "types": [
-      "rock",
-      "dragon"
-    ],
-    "evolvesFrom": "tyrunt",
-    "evolvesTo": []
-  },
-  {
-    "id": 698,
-    "name": "amaura",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/698.gif",
-    "baseStatTotal": 362,
-    "types": [
-      "rock",
-      "ice"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "aurorus"
-    ]
-  },
-  {
-    "id": 699,
-    "name": "aurorus",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/699.gif",
-    "baseStatTotal": 521,
-    "types": [
-      "rock",
-      "ice"
-    ],
-    "evolvesFrom": "amaura",
     "evolvesTo": []
   },
   {
@@ -8853,30 +5976,6 @@
     "evolvesTo": []
   },
   {
-    "id": 710,
-    "name": "pumpkaboo-average",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/710.gif",
-    "baseStatTotal": 335,
-    "types": [
-      "ghost",
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 711,
-    "name": "gourgeist-average",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/711.gif",
-    "baseStatTotal": 494,
-    "types": [
-      "ghost",
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 712,
     "name": "bergmite",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/712.gif",
@@ -8924,41 +6023,6 @@
       "dragon"
     ],
     "evolvesFrom": "noibat",
-    "evolvesTo": []
-  },
-  {
-    "id": 716,
-    "name": "xerneas",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/716.gif",
-    "baseStatTotal": 680,
-    "types": [
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 717,
-    "name": "yveltal",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/717.gif",
-    "baseStatTotal": 680,
-    "types": [
-      "dark",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 718,
-    "name": "zygarde-50",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/718.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "dragon",
-      "ground"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -9288,9 +6352,7 @@
       "rock"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "lycanroc"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 745,
@@ -9300,18 +6362,7 @@
     "types": [
       "rock"
     ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 746,
-    "name": "wishiwashi-solo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/746.gif",
-    "baseStatTotal": 175,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
+    "evolvesFrom": "rockruff",
     "evolvesTo": []
   },
   {
@@ -9415,32 +6466,6 @@
     "evolvesTo": []
   },
   {
-    "id": 755,
-    "name": "morelull",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/755.gif",
-    "baseStatTotal": 285,
-    "types": [
-      "grass",
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "shiinotic"
-    ]
-  },
-  {
-    "id": 756,
-    "name": "shiinotic",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/756.gif",
-    "baseStatTotal": 405,
-    "types": [
-      "grass",
-      "fairy"
-    ],
-    "evolvesFrom": "morelull",
-    "evolvesTo": []
-  },
-  {
     "id": 757,
     "name": "salandit",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/757.gif",
@@ -9464,32 +6489,6 @@
       "fire"
     ],
     "evolvesFrom": "salandit",
-    "evolvesTo": []
-  },
-  {
-    "id": 759,
-    "name": "stufful",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/759.gif",
-    "baseStatTotal": 340,
-    "types": [
-      "normal",
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "bewear"
-    ]
-  },
-  {
-    "id": 760,
-    "name": "bewear",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/760.gif",
-    "baseStatTotal": 500,
-    "types": [
-      "normal",
-      "fighting"
-    ],
-    "evolvesFrom": "stufful",
     "evolvesTo": []
   },
   {
@@ -9564,32 +6563,6 @@
     "evolvesTo": []
   },
   {
-    "id": 767,
-    "name": "wimpod",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/767.gif",
-    "baseStatTotal": 230,
-    "types": [
-      "bug",
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "golisopod"
-    ]
-  },
-  {
-    "id": 768,
-    "name": "golisopod",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/768.gif",
-    "baseStatTotal": 530,
-    "types": [
-      "bug",
-      "water"
-    ],
-    "evolvesFrom": "wimpod",
-    "evolvesTo": []
-  },
-  {
     "id": 769,
     "name": "sandygast",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/769.gif",
@@ -9616,41 +6589,6 @@
     "evolvesTo": []
   },
   {
-    "id": 771,
-    "name": "pyukumuku",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/771.gif",
-    "baseStatTotal": 410,
-    "types": [
-      "water"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 772,
-    "name": "type-null",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/772.gif",
-    "baseStatTotal": 534,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "silvally"
-    ]
-  },
-  {
-    "id": 773,
-    "name": "silvally",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/773.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "type-null",
-    "evolvesTo": []
-  },
-  {
     "id": 774,
     "name": "minior-red-meteor",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/774.gif",
@@ -9669,30 +6607,6 @@
     "baseStatTotal": 480,
     "types": [
       "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 776,
-    "name": "turtonator",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/776.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "fire",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 777,
-    "name": "togedemaru",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/777.gif",
-    "baseStatTotal": 435,
-    "types": [
-      "electric",
-      "steel"
     ],
     "evolvesFrom": null,
     "evolvesTo": []
@@ -9717,30 +6631,6 @@
     "types": [
       "water",
       "psychic"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 780,
-    "name": "drampa",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/780.gif",
-    "baseStatTotal": 485,
-    "types": [
-      "normal",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 781,
-    "name": "dhelmise",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/781.gif",
-    "baseStatTotal": 517,
-    "types": [
-      "ghost",
-      "grass"
     ],
     "evolvesFrom": null,
     "evolvesTo": []
@@ -9782,54 +6672,6 @@
       "fighting"
     ],
     "evolvesFrom": "hakamo-o",
-    "evolvesTo": []
-  },
-  {
-    "id": 785,
-    "name": "tapu-koko",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/785.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "electric",
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 786,
-    "name": "tapu-lele",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/786.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "psychic",
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 787,
-    "name": "tapu-bulu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/787.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "grass",
-      "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 788,
-    "name": "tapu-fini",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/788.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "water",
-      "fairy"
-    ],
-    "evolvesFrom": null,
     "evolvesTo": []
   },
   {
@@ -9884,89 +6726,6 @@
     "evolvesTo": []
   },
   {
-    "id": 793,
-    "name": "nihilego",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/793.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "rock",
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 794,
-    "name": "buzzwole",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/794.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "bug",
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 795,
-    "name": "pheromosa",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/795.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "bug",
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 796,
-    "name": "xurkitree",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/796.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 797,
-    "name": "celesteela",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/797.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "steel",
-      "flying"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 798,
-    "name": "kartana",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/798.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "grass",
-      "steel"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 799,
-    "name": "guzzlord",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/799.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "dark",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 800,
     "name": "necrozma",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/800.gif",
@@ -9985,100 +6744,6 @@
     "types": [
       "steel",
       "fairy"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 802,
-    "name": "marshadow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/802.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "fighting",
-      "ghost"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 803,
-    "name": "poipole",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/803.gif",
-    "baseStatTotal": 420,
-    "types": [
-      "poison"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "naganadel"
-    ]
-  },
-  {
-    "id": 804,
-    "name": "naganadel",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/804.gif",
-    "baseStatTotal": 540,
-    "types": [
-      "poison",
-      "dragon"
-    ],
-    "evolvesFrom": "poipole",
-    "evolvesTo": []
-  },
-  {
-    "id": 805,
-    "name": "stakataka",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/805.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "rock",
-      "steel"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 806,
-    "name": "blacephalon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/806.gif",
-    "baseStatTotal": 570,
-    "types": [
-      "fire",
-      "ghost"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 807,
-    "name": "zeraora",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/807.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 808,
-    "name": "meltan",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/808.gif",
-    "baseStatTotal": 300,
-    "types": [
-      "steel"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 809,
-    "name": "melmetal",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/809.gif",
-    "baseStatTotal": 600,
-    "types": [
-      "steel"
     ],
     "evolvesFrom": null,
     "evolvesTo": []
@@ -10257,117 +6922,6 @@
     "evolvesTo": []
   },
   {
-    "id": 824,
-    "name": "blipbug",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/824.gif",
-    "baseStatTotal": 180,
-    "types": [
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "dottler"
-    ]
-  },
-  {
-    "id": 825,
-    "name": "dottler",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/825.gif",
-    "baseStatTotal": 335,
-    "types": [
-      "bug",
-      "psychic"
-    ],
-    "evolvesFrom": "blipbug",
-    "evolvesTo": [
-      "orbeetle"
-    ]
-  },
-  {
-    "id": 826,
-    "name": "orbeetle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/826.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "bug",
-      "psychic"
-    ],
-    "evolvesFrom": "dottler",
-    "evolvesTo": []
-  },
-  {
-    "id": 827,
-    "name": "nickit",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/827.gif",
-    "baseStatTotal": 245,
-    "types": [
-      "dark"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "thievul"
-    ]
-  },
-  {
-    "id": 828,
-    "name": "thievul",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/828.gif",
-    "baseStatTotal": 455,
-    "types": [
-      "dark"
-    ],
-    "evolvesFrom": "nickit",
-    "evolvesTo": []
-  },
-  {
-    "id": 829,
-    "name": "gossifleur",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/829.gif",
-    "baseStatTotal": 250,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "eldegoss"
-    ]
-  },
-  {
-    "id": 830,
-    "name": "eldegoss",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/830.gif",
-    "baseStatTotal": 460,
-    "types": [
-      "grass"
-    ],
-    "evolvesFrom": "gossifleur",
-    "evolvesTo": []
-  },
-  {
-    "id": 831,
-    "name": "wooloo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/831.gif",
-    "baseStatTotal": 270,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "dubwool"
-    ]
-  },
-  {
-    "id": 832,
-    "name": "dubwool",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/832.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": "wooloo",
-    "evolvesTo": []
-  },
-  {
     "id": 833,
     "name": "chewtle",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/833.gif",
@@ -10390,30 +6944,6 @@
       "rock"
     ],
     "evolvesFrom": "chewtle",
-    "evolvesTo": []
-  },
-  {
-    "id": 835,
-    "name": "yamper",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/835.gif",
-    "baseStatTotal": 270,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "boltund"
-    ]
-  },
-  {
-    "id": 836,
-    "name": "boltund",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/836.gif",
-    "baseStatTotal": 490,
-    "types": [
-      "electric"
-    ],
-    "evolvesFrom": "yamper",
     "evolvesTo": []
   },
   {
@@ -10565,9 +7095,7 @@
       "poison"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "toxtricity"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 849,
@@ -10578,57 +7106,7 @@
       "electric",
       "poison"
     ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 850,
-    "name": "sizzlipede",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/850.gif",
-    "baseStatTotal": 305,
-    "types": [
-      "fire",
-      "bug"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "centiskorch"
-    ]
-  },
-  {
-    "id": 851,
-    "name": "centiskorch",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/851.gif",
-    "baseStatTotal": 525,
-    "types": [
-      "fire",
-      "bug"
-    ],
-    "evolvesFrom": "sizzlipede",
-    "evolvesTo": []
-  },
-  {
-    "id": 852,
-    "name": "clobbopus",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/852.gif",
-    "baseStatTotal": 310,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": [
-      "grapploct"
-    ]
-  },
-  {
-    "id": 853,
-    "name": "grapploct",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/853.gif",
-    "baseStatTotal": 480,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": "clobbopus",
+    "evolvesFrom": "toxel",
     "evolvesTo": []
   },
   {
@@ -10734,18 +7212,6 @@
     "evolvesTo": []
   },
   {
-    "id": 862,
-    "name": "obstagoon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/862.gif",
-    "baseStatTotal": 520,
-    "types": [
-      "dark",
-      "normal"
-    ],
-    "evolvesFrom": "linoone",
-    "evolvesTo": []
-  },
-  {
     "id": 863,
     "name": "perrserker",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/863.gif",
@@ -10754,52 +7220,6 @@
       "steel"
     ],
     "evolvesFrom": "meowth",
-    "evolvesTo": []
-  },
-  {
-    "id": 864,
-    "name": "cursola",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/864.gif",
-    "baseStatTotal": 510,
-    "types": [
-      "ghost"
-    ],
-    "evolvesFrom": "corsola",
-    "evolvesTo": []
-  },
-  {
-    "id": 865,
-    "name": "sirfetchd",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/865.gif",
-    "baseStatTotal": 507,
-    "types": [
-      "fighting"
-    ],
-    "evolvesFrom": "farfetchd",
-    "evolvesTo": []
-  },
-  {
-    "id": 866,
-    "name": "mr-rime",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/866.gif",
-    "baseStatTotal": 520,
-    "types": [
-      "ice",
-      "psychic"
-    ],
-    "evolvesFrom": "mr-mime",
-    "evolvesTo": []
-  },
-  {
-    "id": 867,
-    "name": "runerigus",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/867.gif",
-    "baseStatTotal": 483,
-    "types": [
-      "ground",
-      "ghost"
-    ],
-    "evolvesFrom": "yamask",
     "evolvesTo": []
   },
   {
@@ -10945,54 +7365,6 @@
     "evolvesTo": []
   },
   {
-    "id": 880,
-    "name": "dracozolt",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/880.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "electric",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 881,
-    "name": "arctozolt",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/881.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "electric",
-      "ice"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 882,
-    "name": "dracovish",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/882.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "water",
-      "dragon"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 883,
-    "name": "arctovish",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/883.gif",
-    "baseStatTotal": 505,
-    "types": [
-      "water",
-      "ice"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
     "id": 884,
     "name": "duraludon",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/884.gif",
@@ -11089,9 +7461,7 @@
       "fighting"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "urshifu"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 892,
@@ -11102,7 +7472,7 @@
       "fighting",
       "dark"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "kubfu",
     "evolvesTo": []
   },
   {
@@ -11380,9 +7750,7 @@
       "normal"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "oinkologne"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 916,
@@ -11392,7 +7760,7 @@
     "types": [
       "normal"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "lechonk",
     "evolvesTo": []
   },
   {
@@ -11492,9 +7860,7 @@
       "normal"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "maushold"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 925,
@@ -11504,7 +7870,7 @@
     "types": [
       "normal"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "tandemaus",
     "evolvesTo": []
   },
   {
@@ -11980,9 +8346,7 @@
       "water"
     ],
     "evolvesFrom": null,
-    "evolvesTo": [
-      "palafin"
-    ]
+    "evolvesTo": []
   },
   {
     "id": 964,
@@ -11992,7 +8356,7 @@
     "types": [
       "water"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "finizen",
     "evolvesTo": []
   },
   {
@@ -12209,7 +8573,7 @@
     "types": [
       "normal"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "dunsparce",
     "evolvesTo": []
   },
   {
