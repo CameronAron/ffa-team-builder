@@ -1675,7 +1675,8 @@
     ],
     "evolvesFrom": "cyndaquil",
     "evolvesTo": [
-      "typhlosion"
+      "typhlosion",
+      "typhlosion-hisui"
     ]
   },
   {
@@ -3794,6 +3795,33 @@
     "evolvesTo": []
   },
   {
+    "id": 10001,
+    "name": "deoxys-attack",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10001.gif",
+    "baseStatTotal": 600,
+    "types": ["psychic"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10002,
+    "name": "deoxys-defense",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10002.gif",
+    "baseStatTotal": 600,
+    "types": ["psychic"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10003,
+    "name": "deoxys-speed",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10003.gif",
+    "baseStatTotal": 600,
+    "types": ["psychic"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 387,
     "name": "turtwig",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/387.gif",
@@ -4778,6 +4806,15 @@
     "evolvesTo": []
   },
   {
+    "id": 10245,
+    "name": "dialga-origin",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10245.gif",
+    "baseStatTotal": 680,
+    "types": ["steel", "dragon"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 484,
     "name": "palkia",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/484.gif",
@@ -4786,6 +4823,15 @@
       "water",
       "dragon"
     ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10246,
+    "name": "palkia-origin",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10246.gif",
+    "baseStatTotal": 680,
+    "types": ["water", "dragon"],
     "evolvesFrom": null,
     "evolvesTo": []
   },
@@ -4814,13 +4860,22 @@
   },
   {
     "id": 487,
-    "name": "giratina-altered",
+    "name": "giratina",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/487.gif",
     "baseStatTotal": 680,
     "types": [
       "ghost",
       "dragon"
     ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10007,
+    "name": "giratina-origin",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10007.gif",
+    "baseStatTotal": 680,
+    "types": ["ghost", "dragon"],
     "evolvesFrom": null,
     "evolvesTo": []
   },
@@ -4878,6 +4933,15 @@
     "types": [
       "grass"
     ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10006,
+    "name": "shaymin-sky",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10006.gif",
+    "baseStatTotal": 600,
+    "types": ["grass", "flying"],
     "evolvesFrom": null,
     "evolvesTo": []
   },
@@ -4991,7 +5055,8 @@
     ],
     "evolvesFrom": "oshawott",
     "evolvesTo": [
-      "samurott"
+      "samurott",
+      "samurott-hisui"
     ]
   },
   {
@@ -5179,7 +5244,8 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "lilligant"
+      "lilligant",
+      "lilligant-hisui"
     ]
   },
   {
@@ -5236,7 +5302,7 @@
       "water"
     ],
     "evolvesFrom": null,
-    "evolvesTo": []
+    "evolvesTo": ["basculegion-male","basculegion-female"]
   },
   {
     "id": 551,
@@ -5805,7 +5871,8 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "braviary"
+      "braviary",
+      "braviary-hisui"
     ]
   },
   {
@@ -5972,6 +6039,15 @@
     "evolvesTo": []
   },
   {
+    "id": 10019,
+    "name": "tornadus-therian",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10019.gif",
+    "baseStatTotal": 580,
+    "types": ["flying"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 642,
     "name": "thundurus-incarnate",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/642.gif",
@@ -5980,6 +6056,15 @@
       "electric",
       "flying"
     ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10020,
+    "name": "thundurus-therian",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10020.gif",
+    "baseStatTotal": 580,
+    "types": ["electric", "flying"],
     "evolvesFrom": null,
     "evolvesTo": []
   },
@@ -6020,6 +6105,15 @@
     "evolvesTo": []
   },
   {
+    "id": 10021,
+    "name": "landorus-therian",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10021.gif",
+    "baseStatTotal": 600,
+    "types": ["ground", "flying"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 646,
     "name": "kyurem",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/646.gif",
@@ -6032,8 +6126,26 @@
     "evolvesTo": []
   },
   {
+    "id": 10022,
+    "name": "kyurem-black",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10022.gif",
+    "baseStatTotal": 700,
+    "types": ["dragon", "ice"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10023,
+    "name": "kyurem-white",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10023.gif",
+    "baseStatTotal": 700,
+    "types": ["dragon", "ice"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 647,
-    "name": "keldeo-ordinary",
+    "name": "keldeo",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/647.gif",
     "baseStatTotal": 580,
     "types": [
@@ -6511,7 +6623,8 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "sliggoo"
+      "sliggoo",
+      "sliggoo-hisui"
     ]
   },
   {
@@ -6612,7 +6725,8 @@
     ],
     "evolvesFrom": null,
     "evolvesTo": [
-      "avalugg"
+      "avalugg",
+      "avalugg-hisui"
     ]
   },
   {
@@ -6689,6 +6803,15 @@
     "evolvesTo": []
   },
   {
+    "id": 10086,
+    "name": "hoopa-unbound",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10086.gif",
+    "baseStatTotal": 680,
+    "types": ["psychic", "dark"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 721,
     "name": "volcanion",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/721.gif",
@@ -6725,7 +6848,8 @@
     ],
     "evolvesFrom": "rowlet",
     "evolvesTo": [
-      "decidueye"
+      "decidueye",
+      "decidueye-hisui"
     ]
   },
   {
@@ -7458,6 +7582,24 @@
     "evolvesTo": []
   },
   {
+    "id": 10155,
+    "name": "necrozma-dusk",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10155.gif",
+    "baseStatTotal": 680,
+    "types": ["psychic", "steel"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10156,
+    "name": "necrozma-dawn",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10156.gif",
+    "baseStatTotal": 680,
+    "types": ["psychic", "ghost"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 801,
     "name": "magearna",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/801.gif",
@@ -7816,7 +7958,7 @@
       "poison"
     ],
     "evolvesFrom": null,
-    "evolvesTo": []
+    "evolvesTo": ["toxtricity-amped","toxtricity-low-key"]
   },
   {
     "id": 849,
@@ -8175,6 +8317,15 @@
     "evolvesTo": []
   },
   {
+    "id": 10188,
+    "name": "zacian-crowned",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10188.gif",
+    "baseStatTotal": 720,
+    "types": ["fairy", "steel"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 889,
     "name": "zamazenta",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/889.gif",
@@ -8182,6 +8333,15 @@
     "types": [
       "fighting"
     ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10189,
+    "name": "zamazenta-crowned",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10189.gif",
+    "baseStatTotal": 720,
+    "types": ["fighting", "steel"],
     "evolvesFrom": null,
     "evolvesTo": []
   },
@@ -8301,6 +8461,24 @@
     "evolvesTo": []
   },
   {
+    "id": 10193,
+    "name": "calyrex-ice",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10193.gif",
+    "baseStatTotal": 680,
+    "types": ["psychic", "ice"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10194,
+    "name": "calyrex-shadow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10194.gif",
+    "baseStatTotal": 680,
+    "types": ["psychic", "ghost"],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
     "id": 899,
     "name": "wyrdeer",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/899.gif",
@@ -8357,7 +8535,7 @@
       "water",
       "ghost"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "basculin-white-striped",
     "evolvesTo": []
   },
   {
@@ -8369,7 +8547,7 @@
       "water",
       "ghost"
     ],
-    "evolvesFrom": null,
+    "evolvesFrom": "basculin-white-striped",
     "evolvesTo": []
   },
   {
@@ -8405,6 +8583,15 @@
       "fairy",
       "flying"
     ],
+    "evolvesFrom": null,
+    "evolvesTo": []
+  },
+  {
+    "id": 10249,
+    "name": "enamorus-therian",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10249.gif",
+    "baseStatTotal": 580,
+    "types": ["fairy", "flying"],
     "evolvesFrom": null,
     "evolvesTo": []
   },
@@ -9958,28 +10145,6 @@
     "name": "terapagos",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png",
     "baseStatTotal": 450,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10276,
-    "name": "terapagos-terastal",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10276.png",
-    "baseStatTotal": 600,
-    "types": [
-      "normal"
-    ],
-    "evolvesFrom": null,
-    "evolvesTo": []
-  },
-  {
-    "id": 10277,
-    "name": "terapagos-stellar",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10277.png",
-    "baseStatTotal": 700,
     "types": [
       "normal"
     ],
