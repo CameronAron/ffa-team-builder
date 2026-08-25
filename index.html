@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -27,6 +27,18 @@
 
   <!-- ============ BUILDER TAB ============ -->
   <section id="tab-builder" class="tab-panel active">
+
+    <section class="panel" id="players-panel">
+      <div class="panel-header">
+        <h2><span class="eyebrow">Rosters</span>Teams</h2>
+        <div class="toolbar">
+          <button id="generate-all-btn" class="btn-primary">Generate All Teams</button>
+          <button id="reset-btn" class="btn-ghost">Reset</button>
+        </div>
+      </div>
+
+      <div id="players-container"></div>
+    </section>
 
     <section class="panel" id="effects-panel">
       <div class="panel-header">
@@ -48,18 +60,6 @@
       </div>
 
       <div id="effect-log" class="effect-log"></div>
-    </section>
-
-    <section class="panel" id="players-panel">
-      <div class="panel-header">
-        <h2><span class="eyebrow">Rosters</span>Teams</h2>
-        <div class="toolbar">
-          <button id="generate-all-btn" class="btn-primary">Generate All Teams</button>
-          <button id="reset-btn" class="btn-ghost">Reset</button>
-        </div>
-      </div>
-
-      <div id="players-container"></div>
     </section>
 
   </section>
@@ -92,6 +92,6 @@
 
 <datalist id="pokemon-datalist"></datalist>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>
