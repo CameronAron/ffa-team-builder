@@ -49,7 +49,7 @@ body {
 }
 
 main {
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 1.75rem 1.5rem 4rem;
   display: flex;
@@ -262,6 +262,28 @@ button:focus-visible {
 
 /* ---------------- Effects table ---------------- */
 
+.effects-body {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+}
+
+.effects-col-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 760px) {
+  .effects-body {
+    grid-template-columns: 1fr;
+  }
+}
+
 #effects-table {
   width: 100%;
   border-collapse: collapse;
@@ -312,6 +334,18 @@ button:focus-visible {
   display: flex;
   flex-direction: column-reverse;
   gap: 0.35rem;
+  min-height: 180px;
+  padding: 0.9rem;
+  background: var(--bg-panel-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+}
+
+.effect-log:empty::before {
+  content: "Roll an effect to see the result here.";
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
 }
 
 .effect-log .log-entry {
@@ -319,7 +353,7 @@ button:focus-visible {
   font-size: 0.85rem;
   padding: 0.55rem 0.75rem;
   border-radius: var(--radius-sm);
-  background: var(--bg-panel-alt);
+  background: var(--bg-slot);
   border-left: 3px solid var(--yellow);
   color: var(--text);
   animation: log-in 0.2s ease;
@@ -334,8 +368,20 @@ button:focus-visible {
 
 #players-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 980px) {
+  #players-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  #players-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .player-card {
