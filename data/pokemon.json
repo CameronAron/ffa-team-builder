@@ -8382,7 +8382,7 @@
   },
   {
     "id": 10191,
-    "name": "urshifu-single-strike",
+    "name": "urshifu-rapid-strike",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10191.gif",
     "baseStatTotal": 550,
     "types": [
