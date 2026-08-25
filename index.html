@@ -3,39 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pokémon Showdown FFA Team Builder</title>
+<title>FFA Team Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>FFA Team Builder</h1>
-  <div class="global-controls">
-    <button id="generate-all-btn">🎲 Generate All Teams</button>
-    <button id="reset-btn">Reset</button>
+<header class="top-bar">
+  <div class="brand">
+    <span class="brand-mark">◆</span>
+    <h1>FFA Team Builder</h1>
   </div>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="builder" role="tab" aria-selected="true">Builder</button>
+    <button class="tab-btn" data-tab="settings" role="tab" aria-selected="false">Settings</button>
+  </nav>
 </header>
 
-<section id="effects-panel">
-  <h2>Effects</h2>
-  <table id="effects-table">
-    <thead>
-      <tr><th>Effect</th><th>Weight</th><th></th></tr>
-    </thead>
-    <tbody id="effects-tbody"></tbody>
-  </table>
+<main>
 
-  <div class="add-effect-row">
-    <input type="text" id="new-effect-name" placeholder="Effect name">
-    <input type="number" id="new-effect-weight" placeholder="Weight" min="0" step="1" value="1">
-    <button id="add-effect-btn">Add Effect</button>
-  </div>
+  <!-- ============ BUILDER TAB ============ -->
+  <section id="tab-builder" class="tab-panel active">
 
-  <button id="roll-effect-btn">🎲 Roll Effect</button>
-  <div id="effect-log"></div>
-</section>
+    <section class="panel" id="effects-panel">
+      <div class="panel-header">
+        <h2><span class="eyebrow">Roll table</span>Effects</h2>
+        <button id="roll-effect-btn" class="btn-primary">Roll Effect</button>
+      </div>
 
-<main id="players-container"></main>
+      <table id="effects-table">
+        <thead>
+          <tr><th>Effect</th><th>Weight</th><th></th></tr>
+        </thead>
+        <tbody id="effects-tbody"></tbody>
+      </table>
+
+      <div class="add-effect-row">
+        <input type="text" id="new-effect-name" placeholder="New effect name">
+        <input type="number" id="new-effect-weight" placeholder="Weight" min="0" step="1" value="1">
+        <button id="add-effect-btn" class="btn-secondary">Add</button>
+      </div>
+
+      <div id="effect-log" class="effect-log"></div>
+    </section>
+
+    <section class="panel" id="players-panel">
+      <div class="panel-header">
+        <h2><span class="eyebrow">Rosters</span>Teams</h2>
+        <div class="toolbar">
+          <button id="generate-all-btn" class="btn-primary">Generate All Teams</button>
+          <button id="reset-btn" class="btn-ghost">Reset</button>
+        </div>
+      </div>
+
+      <div id="players-container"></div>
+    </section>
+
+  </section>
+
+  <!-- ============ SETTINGS TAB ============ -->
+  <section id="tab-settings" class="tab-panel">
+    <section class="panel">
+      <div class="panel-header">
+        <h2><span class="eyebrow">Preferences</span>Settings</h2>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-copy">
+          <div class="setting-title">Auto-apply rolled effects</div>
+          <div class="setting-desc">
+            When on, rolling an effect immediately performs it (Reroll a slot, Swap two Pokémon, etc).
+            When off — the default — rolling just announces which effect came up, and it's on you to apply it.
+            This exists because custom effects you add have no built-in behavior for the app to run.
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="auto-apply-toggle">
+          <span class="switch-track"><span class="switch-thumb"></span></span>
+        </label>
+      </div>
+    </section>
+  </section>
+
+</main>
 
 <datalist id="pokemon-datalist"></datalist>
 

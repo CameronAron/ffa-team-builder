@@ -4,15 +4,10 @@
    Data flow:
      pokemonData  -> loaded once from data/pokemon.json, read-only
      state        -> the single source of truth for everything
-                      the UI renders (players/teams + effects list)
+                      the UI renders (players/teams, effects list,
+                      and settings)
      saveState()  -> persists `state` to localStorage
      render()     -> re-draws the whole UI from `state`
-
-   Everything the user does (generate, roll an effect, edit a
-   slot, add/remove an effect) mutates `state` and then calls
-   saveState() + render(). Keeping it this centralized is what
-   would make it straightforward to swap localStorage for a
-   synced backend later, if you ever revisit multiplayer.
    ============================================================ */
 
 const STORAGE_KEY = "ffaTeamBuilderState";
@@ -30,8 +25,11 @@ async function init() {
   populateDatalist();
 
   state = loadState() ?? createDefaultState();
+  // Migrate older saved states that predate the settings object.
+  if (!state.settings) state.settings = { autoApplyEffects: false };
 
   render();
+  bindTabs();
   bindGlobalControls();
 }
 
@@ -47,6 +45,9 @@ function createDefaultState() {
       { name: "Evolve", weight: 3 },
       { name: "Devolve", weight: 2 },
     ],
+    settings: {
+      autoApplyEffects: false, // off by default — see roll-effect-btn handler
+    },
   };
 }
 
@@ -119,42 +120,43 @@ function randomFilledSlot() {
   return candidates[Math.floor(Math.random() * candidates.length)];
 }
 
-/* Applies the named effect to current state, mutating it.
-   Returns a short human-readable description of what happened,
-   for the log. Unknown / custom effect names fall through to a
-   generic message since there's no predefined action for them. */
+/* Applies the named effect to current state, mutating it. Only called
+   when the "Auto-apply rolled effects" setting is on. Returns a short
+   human-readable description of what happened, for the log. Unknown /
+   custom effect names fall through to a generic message since there's
+   no predefined action for them. */
 function applyEffect(name) {
   switch (name) {
     case "Reroll": {
       const target = randomFilledSlot();
-      if (!target) return "Reroll: no Pokémon on the field yet.";
+      if (!target) return "no Pokémon on the field yet, nothing to reroll.";
       const { pIdx, sIdx } = target;
       const newMon = randomPokemon();
       state.players[pIdx].team[sIdx] = newMon;
-      return `Reroll: ${state.players[pIdx].name}'s slot ${sIdx + 1} became ${capitalize(newMon.name)}.`;
+      return `${state.players[pIdx].name}'s slot ${sIdx + 1} became ${capitalize(newMon.name)}.`;
     }
 
     case "Swap": {
       const a = randomFilledSlot();
       const b = randomFilledSlot();
-      if (!a || !b) return "Swap: not enough Pokémon on the field yet.";
+      if (!a || !b) return "not enough Pokémon on the field yet to swap.";
       const temp = state.players[a.pIdx].team[a.sIdx];
       state.players[a.pIdx].team[a.sIdx] = state.players[b.pIdx].team[b.sIdx];
       state.players[b.pIdx].team[b.sIdx] = temp;
-      return `Swap: exchanged ${state.players[a.pIdx].name} slot ${a.sIdx + 1} with ${state.players[b.pIdx].name} slot ${b.sIdx + 1}.`;
+      return `swapped ${state.players[a.pIdx].name} slot ${a.sIdx + 1} with ${state.players[b.pIdx].name} slot ${b.sIdx + 1}.`;
     }
 
     case "Evolve":
     case "Devolve":
       // pokemon.json currently only stores name + sprite, so there's no
       // evolvesFrom/evolvesTo chain to act on yet. Once you add that data
-      // to the JSON (e.g. from PokeAPI's evolution-chain endpoint), this
-      // is the spot to look up the target's evolvesTo/evolvesFrom and
-      // swap the slot to that Pokémon, similar to the Reroll case above.
-      return `${name}: rolled, but no evolution-chain data is loaded yet — no automatic action taken.`;
+      // (e.g. from PokeAPI's evolution-chain endpoint), this is the spot
+      // to look up the target's evolvesTo/evolvesFrom and swap the slot,
+      // similar to the Reroll case above.
+      return "no evolution-chain data is loaded yet, so no action was taken.";
 
     default:
-      return `Rolled: ${name} — this is a custom effect with no built-in action; apply it manually.`;
+      return "this is a custom effect with no built-in action — apply it manually.";
   }
 }
 
@@ -163,6 +165,7 @@ function applyEffect(name) {
 function render() {
   renderEffectsTable();
   renderPlayers();
+  renderSettings();
 }
 
 function renderEffectsTable() {
@@ -189,7 +192,7 @@ function renderEffectsTable() {
 
     const actionTd = document.createElement("td");
     const removeBtn = document.createElement("button");
-    removeBtn.className = "danger";
+    removeBtn.className = "btn-danger";
     removeBtn.textContent = "Remove";
     removeBtn.addEventListener("click", () => {
       state.effects.splice(idx, 1);
@@ -225,7 +228,7 @@ function renderPlayers() {
     });
 
     const genBtn = document.createElement("button");
-    genBtn.className = "secondary";
+    genBtn.className = "btn-secondary";
     genBtn.textContent = "Generate";
     genBtn.addEventListener("click", () => {
       player.team = randomTeam();
@@ -253,16 +256,20 @@ function renderSlot(player, pIdx, mon, sIdx) {
   const slot = document.createElement("div");
   slot.className = "slot-card";
 
+  const spriteFrame = document.createElement("div");
+  spriteFrame.className = "sprite-frame";
+
   if (mon) {
     const img = document.createElement("img");
     img.src = mon.sprite;
     img.alt = mon.name;
-    slot.appendChild(img);
+    spriteFrame.appendChild(img);
   } else {
     const placeholder = document.createElement("div");
     placeholder.className = "empty-sprite";
-    slot.appendChild(placeholder);
+    spriteFrame.appendChild(placeholder);
   }
+  slot.appendChild(spriteFrame);
 
   const input = document.createElement("input");
   input.type = "text";
@@ -290,7 +297,7 @@ function renderSlot(player, pIdx, mon, sIdx) {
   actions.className = "slot-actions";
 
   const rerollBtn = document.createElement("button");
-  rerollBtn.className = "secondary";
+  rerollBtn.className = "btn-secondary";
   rerollBtn.textContent = "🎲";
   rerollBtn.title = "Reroll just this slot";
   rerollBtn.addEventListener("click", () => {
@@ -300,7 +307,7 @@ function renderSlot(player, pIdx, mon, sIdx) {
   });
 
   const clearBtn = document.createElement("button");
-  clearBtn.className = "danger";
+  clearBtn.className = "btn-danger";
   clearBtn.textContent = "✕";
   clearBtn.title = "Clear this slot";
   clearBtn.addEventListener("click", () => {
@@ -315,6 +322,11 @@ function renderSlot(player, pIdx, mon, sIdx) {
   return slot;
 }
 
+function renderSettings() {
+  const toggle = document.getElementById("auto-apply-toggle");
+  toggle.checked = state.settings.autoApplyEffects;
+}
+
 /* ---------------- Effect log ---------------- */
 
 function logEffect(message) {
@@ -322,12 +334,31 @@ function logEffect(message) {
   const entry = document.createElement("div");
   entry.className = "log-entry";
   entry.textContent = message;
-  log.prepend(entry);
+  log.appendChild(entry); // flex-direction: column-reverse puts newest on top
 
-  // Keep the log from growing forever.
   while (log.children.length > 8) {
-    log.removeChild(log.lastChild);
+    log.removeChild(log.firstChild);
   }
+}
+
+/* ---------------- Tabs ---------------- */
+
+function bindTabs() {
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  tabButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tabButtons.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+
+      document.querySelectorAll(".tab-panel").forEach((panel) => {
+        panel.classList.toggle("active", panel.id === `tab-${btn.dataset.tab}`);
+      });
+    });
+  });
 }
 
 /* ---------------- Global controls ---------------- */
@@ -366,10 +397,22 @@ function bindGlobalControls() {
       logEffect("No effects with weight > 0 to roll.");
       return;
     }
-    const description = applyEffect(name);
+
+    if (state.settings.autoApplyEffects) {
+      const result = applyEffect(name);
+      saveState();
+      render();
+      logEffect(`Rolled ${name} — ${result}`);
+    } else {
+      // Default behavior: just announce it. No action taken, so nothing
+      // in `state` changes and there's no re-render needed.
+      logEffect(`Rolled: ${name}`);
+    }
+  });
+
+  document.getElementById("auto-apply-toggle").addEventListener("change", (e) => {
+    state.settings.autoApplyEffects = e.target.checked;
     saveState();
-    render();
-    logEffect(description);
   });
 }
 
